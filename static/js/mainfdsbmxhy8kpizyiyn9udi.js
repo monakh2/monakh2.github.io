@@ -4141,6 +4141,7 @@ window.addEventListener('resize', function () {
 "use strict";
 "use strict";
 "use strict";
+"use strict";
 'use strict';
 
 $('.page__footer .year').html(new Date().getFullYear());
@@ -4200,7 +4201,7 @@ map.drawOverlay({
 	verticalAlign: 'top',
 	horizontalAlign: 'center',
 	// content: '<div class="overlay arrow_box">220090, г. Минск, ул. Олешева, 14</div>'
-	content: '<div class=\"pin\">220090, г. Минск, ул. Олешева, 14</div>\n' + '<div class=\"pulse\"></div>'
+	content: '<div class=\"map-marker\" domflag >220090, г. Минск, ул. Олешева, 14</div>\n' + '<div class=\"pulse\"></div>'
 });
 'use strict';
 
@@ -4377,6 +4378,5 @@ $(function () {
 // 		);
 // 	});
 // })(jQuery, ResponsiveBootstrapToolkit);
-"use strict";
 "use strict";
 "use strict";
