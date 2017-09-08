@@ -5,6 +5,9 @@ $(function () {
 
     var slider_portfolio = new Swiper('.slider-portfolio', {
         pagination: '.slider-portfolio-pagination',
+		speed: 400,
+		initialSlide: 1,
+		autoplay: 1000,
         effect: 'coverflow',
         slideToClickedSlide:true,
         grabCursor: true,
