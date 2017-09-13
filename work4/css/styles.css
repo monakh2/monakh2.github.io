@@ -1,0 +1,1460 @@
+@font-face {
+    font-family: "CalibriRegular";
+    src: url("fonts/CalibriRegular.ttf");
+    font-style: normal;
+}
+@font-face {
+    font-family: "CalibriItalic";
+    src: url("fonts/CalibriItalic.ttf");
+    font-style: normal;
+}
+@font-face {
+    font-family: "CalibriBold";
+    src: url("fonts/CalibriBold.ttf");
+    font-style: normal;
+}
+@font-face {
+    font-family: "CalibriLight";
+    src: url("fonts/CalibriLight.ttf");
+    font-style: normal;
+}
+@font-face {
+    font-family: "CalibriItalic";
+    src: url("fonts/CalibriItalic.ttf");
+    font-style: normal;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F8F8F8;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    height: 70px;
+}
+.nav  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    font: 18px/18px "CalibriLight";
+    display: block;
+    color: #4F5357;
+    text-align: center;
+    padding: 25px 15px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.nav li a:hover {
+    color: #fff;
+    background-color: #25388B;
+    transition: 0.5s;
+}
+
+.headOrder {
+    padding: 13px 50px;
+    float: right;
+    color: #fff;
+    text-align: center;
+    display: block;
+    border: 5px solid #FFF323;
+    text-decoration: none;
+    transition: 0.5s;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    margin: 5px 15px 0 0 ;
+    font: 24px/24px "CalibriBold";
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00dcee+0,0068a2+50,000e6a+100 */
+    background: #00dcee; /* Old browsers */
+    background: -moz-linear-gradient(top, #00dcee 0%, #0068a2 50%, #000e6a 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #00dcee 0%,#0068a2 50%,#000e6a 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #00dcee 0%,#0068a2 50%,#000e6a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00dcee', endColorstr='#000e6a',GradientType=0 ); /* IE6-9 */
+}
+.headOrder:hover {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+    border: 5px solid #0087B6;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000e6a+0,0068a2+50,00dcee+100 */
+    background: #000e6a; /* Old browsers */
+    background: -moz-linear-gradient(top, #000e6a 0%, #0068a2 50%, #00dcee 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #000e6a 0%,#0068a2 50%,#00dcee 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #000e6a 0%,#0068a2 50%,#00dcee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000e6a', endColorstr='#00dcee',GradientType=0 ); /* IE6-9 */
+}
+.b1Wrap {
+    height: 320px;
+    background: url("../img/bgB1.jpg") no-repeat center center;
+    background-size: cover;
+}
+.b1 h1 {
+    margin-top: 55px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font: 60px/60px "CalibriBold";
+}
+.b1 p {
+    margin-top: 20px;
+    font: 24px/24px "CalibriLight";
+    color: #fff;
+    text-align: center;
+}
+/*block2*/
+.b2Wrap {
+    background: url("../img/bgB2.jpg") no-repeat center center;
+    height: 598px;
+    background-size: cover;
+}
+.b2 h2 {
+    width: 900px;
+    margin: 60px auto 0;
+    font: 40px/40px "CalibriRegular";
+    text-align: center;
+    text-transform: uppercase;
+    color: #4F5357;
+    background-color: #FFFFFF;
+}
+.b2Item1 {
+    margin-top: 48px;
+    background: url("../img/b2Item1.png") no-repeat center center;
+    height: 410px;
+}
+.b2Item1 h3 {
+    font: 22px/22px "CalibriItalic";
+    margin-top: 280px;
+    text-align: center;
+    color: #5B5D5F;
+    -moz-transform: rotate(-15deg); /* Для Firefox */
+    -ms-transform: rotate(-15deg); /* Для IE */
+    -webkit-transform: rotate(-15deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(-15deg); /* Для Opera */
+    transform: rotate(-15deg);
+}
+.b2Item2 {
+    margin-top: 48px;
+    background: url("../img/b2Item2.png") no-repeat center center;
+    height: 410px;
+    padding-left: 20px;
+}
+.b2Item2 h3 {
+    font: 22px/22px "CalibriItalic";
+    margin-top: 280px;
+    text-align: center;
+    color: #5B5D5F;
+}
+.b2Item3 {
+    margin-top: 48px;
+    background: url("../img/b2Item3.png") no-repeat center center;
+    height: 410px;
+    padding-left: 42px;
+}
+.b2Item3 h3 {
+    font: 21px/21px "CalibriItalic";
+    margin-top: 280px;
+    text-align: center;
+    color: #5B5D5F;
+    -moz-transform: rotate(-10deg); /* Для Firefox */
+    -ms-transform: rotate(-10deg); /* Для IE */
+    -webkit-transform: rotate(-10deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(-10deg); /* Для Opera */
+    transform: rotate(-10deg);
+}
+/*block3*/
+.b3 {
+    height: auto;
+    padding: 70px 0 105px;
+}
+.b3 h2 {
+    width: 900px;
+    margin: 60px auto 0;
+    font: 40px/40px "CalibriRegular";
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #1F55A7;
+}
+.b3Influences {
+    margin-top: 50px;
+    text-align: center;
+}
+.b3Item {
+    padding: 0 20px;
+    height: 270px;
+}
+.b3Item img {
+    width: 100%;
+    height: auto;
+}
+.b3Item p {
+    margin-top: 23px;
+    font: 24px/20px "CalibriLight";
+    color: #52565A;
+}
+
+/*block4*/
+.b4Wrap {
+    background: url("../img/bgB4.jpg") no-repeat center top;
+    height: 881px;
+    background-size: cover;
+}
+.b4 {
+    background: url("../img/b4Product.png") no-repeat right 85%;
+    height: 881px;
+
+}
+.b4 h2 {
+    width: 740px;
+    margin: 68px auto 0;
+    font: 40px/40px "CalibriRegular";
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #4F5357;
+}
+.b4FormWrap {
+    margin: 30px ;
+    padding: 30px 20px 50px;
+    text-align: center;
+    background-color: #1F55A7;
+}
+.b4FormWrap h3 {
+    margin-top: 0;
+    font: 24px/30px "CalibriRegular";
+    color: #fff;
+}
+.b4FormWrap h4 {
+    margin-top: 0;
+    color: #fff;
+    font: 36px/36px "CalibriRegular";
+    text-transform: lowercase;
+}
+.b4Skidka {
+    color: #F2E72F;
+}
+.oldPrice {
+    font: 18px/18px "CalibriRegular";
+    color: #fff;
+    text-decoration: line-through;
+}
+.newPrice {
+    font: 45px/45px "CalibriRegular";
+    color: #FFF323;
+}
+label.cpa-control-label, span.cpa-control-amount {
+    display: none;
+}
+select, input {
+    margin-top: 10px;
+    padding-left: 15px;
+    height: 50px;
+    width: 100%;
+    border: 1px solid #2C2A29;
+    background-color: #fff;
+}
+::-webkit-input-placeholder {color:#B2B3B3;}
+::-moz-placeholder          {color:#B2B3B3;}/* Firefox 19+ */
+:-moz-placeholder           {color:#B2B3B3;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#B2B3B3;}
+
+button.cpa-input-submit {
+    margin: 25px auto ;
+    padding: 13px 50px;
+    width: 100%;
+    float: right;
+    font: 24px/24px "CalibriBold";
+    color: #fff;
+    text-align: center;
+    display: block;
+    letter-spacing: 5px;
+    border: 5px solid #FFF323;
+    text-decoration: none;
+    transition: 0.5s;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00dcee+0,0068a2+50,000e6a+100 */
+    background: #00dcee; /* Old browsers */
+    background: -moz-linear-gradient(top, #00dcee 0%, #0068a2 50%, #000e6a 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #00dcee 0%,#0068a2 50%,#000e6a 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #00dcee 0%,#0068a2 50%,#000e6a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00dcee', endColorstr='#000e6a',GradientType=0 ); /* IE6-9 */
+}
+button.cpa-input-submit:hover {
+    text-decoration: none;
+    border: 5px solid #0087B6;
+    transition: 0.5s;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000e6a+0,0068a2+50,00dcee+100 */
+    background: #000e6a; /* Old browsers */
+    background: -moz-linear-gradient(top, #000e6a 0%, #0068a2 50%, #00dcee 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #000e6a 0%,#0068a2 50%,#00dcee 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #000e6a 0%,#0068a2 50%,#00dcee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000e6a', endColorstr='#00dcee',GradientType=0 ); /* IE6-9 */
+}
+/*block5*/
+.b5 {
+    padding: 60px 15px;
+}
+.b5 h2 {
+    margin: 60px auto 0;
+    font: 40px/40px "CalibriRegular";
+    text-align: center;
+    width: 530px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #1F55A7;
+}
+.b5Expectations {
+    margin-top: 19px;
+    list-style-image: url("../img/b5ListStyle.png");
+}
+.b5Expectations li:first-child {
+    margin-top: 0;
+}
+.b5Expectations li {
+    margin-top: 12px;
+    height: auto;
+    font: 24px/24px "CalibriLight";
+    color: #000;
+    text-align: left;
+}
+/*block6*/
+.b6Wrap {
+    background: url("../img/bgB6.jpg") no-repeat center center;
+    height: 1200px;
+    background-size: cover;
+}
+.b6 h2 {
+    padding: 5px 0 ;
+    margin: 50px auto 0;
+    width: 730px;
+    font: 40px/40px "CalibriRegular";
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    background-color: #4F5357;
+}
+.b6 h3 {
+    padding: 5px 0 ;
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+    font: 24px/24px "CalibriLight";
+    color: #4F5357;
+    background-color: #fff;
+
+}
+.b6Item {
+    margin-top: 50px;
+    height: 278px;
+}
+.b6Foto img {
+    width: 100%;
+}
+.b6Text {
+    background-color: #4F5357;
+    height: 100%;
+    padding: 68px 0 0 29px;
+}
+.b6Text h4 {
+    font: 22px/24px "CalibriLight";
+    text-align: left;
+    color: #fff;
+}
+.b6Title {
+    font: 24px/24px "CalibriBold";
+    text-decoration: underline;
+}
+/*block7*/
+.b7  {
+    padding: 0 15px 60px;
+}
+.b7 h2 {
+    margin: 60px auto 0;
+    font: 40px/40px "CalibriRegular";
+    text-align: center;
+    width: 575px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #1F55A7;
+}
+.b7 p {
+    margin-top: 0;
+    font: 18px/18px "CalibriRegular";
+    color: #000;
+    text-align: left;
+    border: 10px solid #1F55A7;
+    padding: 23px 11px ;
+}
+.b7Itsructions h3 {
+    margin-bottom: 0;
+    padding: 5px 20px;
+    font: 30px/24px "CalibriLight";
+    margin-top: 44px;
+    width: 450px;
+    background-color: #1F55A7;
+    color: #fff;
+    text-align: left;
+}
+.b7Guardianship h3 {
+    margin-bottom: 0;
+    padding: 5px 20px;
+    font: 30px/24px "CalibriLight";
+    margin-top: 44px;
+    width: 640px;
+    background-color: #1F55A7;
+    color: #fff;
+    text-align: left;
+}
+.b7Storage h3 {
+    margin-bottom: 0;
+    padding: 5px 20px;
+    font: 30px/24px "CalibriLight";
+    margin-top: 44px;
+    width: 280px;
+    background-color: #1F55A7;
+    color: #fff;
+    text-align: left;
+}
+/*block8*/
+.b8Wrap {
+    background: url("../img/bgB8.jpg") no-repeat center center;
+    height: 400px;
+}
+.b8 h2 {
+    margin: 50px auto 0;
+    font: 40px/40px "CalibriRegular";
+    text-align: center;
+    width: 250px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #4F5357;
+}
+.b8Statistic h3 {
+    margin: 48px auto 0;
+    padding-top: 35px;
+    font: 48px/48px "CalibriRegular";
+    text-align: center;
+    color: #fff;
+    border: 5px solid #FFF323;
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00dcee+0,0068a2+50,000e6a+100 */
+    background: #00dcee; /* Old browsers */
+    background: -moz-linear-gradient(top, #00dcee 0%, #0068a2 50%, #000e6a 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #00dcee 0%,#0068a2 50%,#000e6a 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #00dcee 0%,#0068a2 50%,#000e6a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00dcee', endColorstr='#000e6a',GradientType=0 ); /* IE6-9 */
+}
+.b8Statistic p {
+    margin-top: 26px;
+    text-align: center;
+    font: 24px/24px "CalibriRegular";
+    color: #fff;
+    text-transform: lowercase;
+}
+/*block9*/
+.b9 {
+    padding-bottom: 130px;
+}
+.b9 h2 {
+    margin: 60px auto 0;
+    font: 40px/40px "CalibriRegular";
+    text-align: center;
+    width: 430px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #1F55A7;
+}
+.b9Expert {
+    margin-top: 35px;
+}
+.b9Foto {
+    padding: 0 15px;
+}
+.b9Foto img {
+    width: 100%;
+    height: auto;
+}
+.b9Review {
+    padding: 0 0 0 15px;
+}
+.b9Review h3 {
+    font: 24px/24px "CalibriBold";
+    text-align: left;
+    color: #515559;
+}
+.b9Review p {
+    margin-top: 28px;
+    color: #53575B;
+    font: 17px/18px "CalibriRegular";
+    text-align: left;
+}
+/*block10*/
+.b10Wrap {
+    background: url("../img/bgB10.jpg") repeat-x left center;
+    height: 573px;
+}
+.b10 {
+    padding: 0 15px;
+}
+.b10 h2 {
+    margin: 50px auto 0;
+    font: 40px/40px "CalibriRegular";
+    text-align: center;
+    width: 510px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #4F5357;
+}
+.b10Testemonials {
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 20px 0;
+    border: 1px solid #4F5357;
+    height: auto;
+}
+.b10Foto {
+    padding: 0 30px;
+}
+.b10Foto img {
+    width: 100%;
+    height: auto;
+}
+.b10Review {
+    padding-left: 15px;
+}
+.b10Review h3 {
+    font: 18px/18px "CalibriRegular";
+    text-align: left;
+    color: #515457;
+}
+.b10Review h4 {
+    margin: 10px 15px 0 0;
+    font: 20px/20px "CalibriRegular";
+    text-align: right;
+    color: #3C65AE;
+}
+.b10Review h5 {
+    margin: 50px 15px 0 0;
+    font: 20px/20px "CalibriRegular";
+    text-align: right;
+    color: #3C65AE;
+}
+/*block4*/
+.b11Wrap {
+    background: url("../img/bgB4.jpg") no-repeat center top;
+    height: 881px;
+    background-size: cover;
+}
+.b11 {
+    background: url("../img/b4Product.png") no-repeat right 85%;
+    height: 881px;
+
+}
+.b11 h2 {
+    width: 740px;
+    margin: 68px auto 0;
+    font: 40px/40px "CalibriRegular";
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #4F5357;
+}
+.b11FormWrap {
+    margin: 75px ;
+    padding: 30px 20px 50px;
+    text-align: center;
+    background-color: #1F55A7;
+}
+.b11FormWrap h3 {
+    margin-top: 0;
+    font: 24px/30px "CalibriRegular";
+    color: #fff;
+}
+.b11FormWrap h4 {
+    margin-top: 0;
+    color: #fff;
+    font: 36px/26px "CalibriRegular";
+    text-transform: lowercase;
+}
+.b11Skidka {
+    color: #F2E72F;
+}
+footer {
+    background-color: #B2B3B3;
+    padding: 20px 0;
+}
+
+@media all and (max-width: 1365px) and (min-width: 1024px) {
+    .b1 p {
+        margin-top: 20px;
+        font: 22px/24px "CalibriLight";
+    }
+    .b2Item1, .b2Item2, .b2Item3 {
+        background-size: 100%;
+    }
+    .b2Item1 h3 {
+        font: 17px/21px "CalibriItalic";
+        margin-top: 270px;
+    }
+    .b2Item2 h3 {
+        font: 17px/21px "CalibriItalic";
+        margin-top: 280px;
+    }
+    .b2Item3 h3 {
+        font: 17px/21px "CalibriItalic";
+        margin-top: 270px;
+    }
+    .b3 {
+        height: auto;
+        padding: 20px 0;
+    }
+    .b3Item p {
+        margin-top: 23px;
+        font: 15px/18px "CalibriLight";
+    }
+    .b5Expectations {
+        margin-top: 19px;
+        list-style-image: url(../img/b5ListStyle.png);
+        padding-left: 8%;
+    }
+    .b5Expectations li {
+        margin-top: 12px;
+        height: auto;
+        font: 20px/24px "CalibriLight";
+    }
+    .b6Wrap {
+        background: url(../img/bgB6.jpg) no-repeat center center;
+        height: 1100px;
+        background-size: cover;
+    }
+    .b6Item {
+        margin-top: 50px;
+        height: 232px;
+    }
+    .b6Text {
+        height: 100%;
+        padding: 20px 0 0 20px;
+    }
+    .b6Text h4 {
+        font: 18px/22px "CalibriLight";
+        text-align: left;
+        color: #fff;
+    }
+    .b7 p {
+        font: 16px/18px "CalibriRegular";
+        border: 10px solid #1F55A7;
+        padding: 23px 11px;
+    }
+
+    .b9Review p {
+        margin-top: 28px;
+        font: 14px/18px "CalibriRegular";
+        text-align: left;
+    }
+}
+@media all and (max-width: 1023px) and (min-width: 768px) {
+    .b1 h1 {
+        margin-top: 55px;
+        font: 54px/54px "CalibriBold";
+    }
+    .b1 p {
+        margin-top: 20px;
+        font: 18px/22px "CalibriLight";
+    }
+    .b2 h2 {
+        width: 100%;
+        margin: 60px auto 0;
+        font: 31px/40px "CalibriRegular";
+        text-align: center;
+
+    }
+    .b2Item1, .b2Item2, .b2Item3 {
+
+    }
+    .b2Item1 {
+        padding-left: 20px;
+        height: 300px;
+        background-size: 100%;
+    }
+    .b2Item1 h3 {
+        font: 14px/21px "CalibriItalic";
+        margin-top: 192px;
+    }
+    .b2Item2 {
+        padding-left: 20px;
+        background-size: 100%;
+        height: 300px;
+    }
+    .b2Item2 h3 {
+        font: 14px/21px "CalibriItalic";
+        margin-top: 200px;
+    }
+    .b2Item3 {
+        margin-top: 48px;
+        background: url(../img/b2Item3.png) no-repeat center center;
+        padding-left: 37px;
+        background-size: 100%;
+        height: 300px;
+    }
+    .b2Item3 h3 {
+        font: 14px/16px "CalibriItalic";
+        margin-top: 192px;
+    }
+    .b3 {
+        height: auto;
+        padding: 20px 0;
+    }
+    .b3 h2 {
+        width: 100%;
+        margin: 60px auto 0;
+        font: 33px/40px "CalibriRegular";
+    }
+    .b3Item p {
+        margin-top: 23px;
+        font: 15px/18px "CalibriLight";
+    }
+    .b4 {
+        background: url(../img/b4Product.png) no-repeat right 85%;
+        height: 881px;
+        background-size: 50%;
+    }
+    .b4FormWrap h4 {
+        font: 29px/29px "CalibriRegular";
+    }
+    .b5Expectations {
+        margin-top: 19px;
+        list-style-image: url(../img/b5ListStyle.png);
+        padding-left: 8%;
+    }
+    .b5Expectations li {
+        margin-top: 12px;
+        height: auto;
+        font: 15px/24px "CalibriLight";
+    }
+    .b6Wrap {
+        background: url(../img/bgB6.jpg) no-repeat center center;
+        height: 900px;
+        background-size: cover;
+    }
+    .b6Item {
+        margin-top: 50px;
+        height: 179px;
+    }
+    .b6Text {
+        height: 100%;
+        padding: 20px 0 0 20px;
+    }
+    .b6Text h4 {
+        font: 15px/17px "CalibriLight";
+    }
+    .b7 p {
+        font: 12px/13px "CalibriRegular";
+        border: 10px solid #1F55A7;
+        padding: 23px 11px;
+    }
+    .b8Statistic p {
+        margin-top: 26px;
+        font: 18px/21px "CalibriRegular";
+    }
+    .b9 {
+        padding-bottom: 40px;
+    }
+    .b9Review p {
+        margin-top: 28px;
+        font: 11px/14px "CalibriRegular";
+    }
+    .b10Wrap {
+        background: url(../img/bgB10.jpg) repeat left top;
+        height: 670px;
+    }
+    .b11 {
+        background: url(../img/b4Product.png) no-repeat right 85%;
+        height: 881px;
+        background-size: 50%;
+    }
+}
+@media all and (max-width: 767px) and (min-width: 414px) {
+    .nav {
+        display: none;
+    }
+    .b1 h1 {
+        margin-top: 55px;
+        font: 28px/32px "CalibriBold";
+    }
+    .b1 p {
+        margin-top: 20px;
+        font: 18px/22px "CalibriLight";
+    }
+    .b2Wrap {
+        background: url(../img/bgB2.jpg) no-repeat center center;
+        height: 1450px;
+        background-size: cover;
+    }
+    .b2 h2 {
+        width: 100%;
+        margin: 60px auto 0;
+        font: 31px/40px "CalibriRegular";
+
+    }
+    .b2Item1 {
+        margin-top: 15px;
+        padding-left: 20px;
+        height: 420px;
+        background-size: 100%;
+    }
+    .b2Item1 h3 {
+        font: 22px/25px "CalibriItalic";
+        margin-top: 280px;
+    }
+    .b2Item2 {
+        margin-top: 15px;
+        padding-left: 20px;
+        background-size: 100%;
+        height: 420px;
+    }
+    .b2Item2 h3 {
+        font: 22px/25px "CalibriItalic";
+        margin-top: 290px;
+    }
+    .b2Item3 {
+        margin-top: 15px;
+        background: url(../img/b2Item3.png) no-repeat center center;
+        padding-left: 45px;
+        background-size: 100%;
+        height: 420px;
+    }
+    .b2Item3 h3 {
+        font: 21px/25px "CalibriItalic";
+        margin-top: 290px;
+    }
+    .b3 {
+        height: auto;
+        padding: 20px 0;
+    }
+    .b3 h2 {
+        width: 100%;
+        margin: 60px auto 0;
+        font: 33px/40px "CalibriRegular";
+    }
+    .b3Item p {
+        margin-top: 23px;
+        font: 15px/18px "CalibriLight";
+    }
+    .b4Wrap {
+        background: url(../img/bgB4.jpg) no-repeat center top;
+        height: 1200px;
+        background-size: cover;
+    }
+    .b4 {
+        background: url(../img/b4Product.png) no-repeat center 85%;
+        height: 1200px;
+        background-size: 95%;
+    }
+    .b4 h2 {
+        width: 100%;
+        margin: 68px auto 0;
+        font: 36px/40px "CalibriRegular";
+    }
+    .b4FormWrap {
+        margin: 30px auto;
+        padding: 15px 20px;
+    }
+    .b4FormWrap h4 {
+        font: 29px/29px "CalibriRegular";
+    }
+    .b5 h2 {
+        margin: 20px auto 0;
+        font: 40px/40px "CalibriRegular";
+        width: 100%;
+    }
+    .b5Expectations {
+        margin-top: 19px;
+        list-style-image:  url(../img/b5ListStyle.png);
+        list-style-position: inside;
+        padding-left: 0;
+    }
+    .b5Expectations li {
+        margin-top: 12px;
+        height: auto;
+        font: 19px/24px "CalibriLight";
+    }
+    .b6Wrap {
+        background: url(../img/bgB6.jpg) no-repeat center center;
+        height: 1800px;
+        background-size: cover;
+    }
+    .b6 h2 {
+        padding: 5px 0;
+        margin: 40px auto 0;
+        width: 100%;
+        font: 32px/32px "CalibriRegular";
+    }
+    .b6 h3 {
+        width: 100%;
+        font: 20px/24px "CalibriLight";
+    }
+    .b6Item {
+        margin-top: 15px;
+        height: auto;
+    }
+    .b6Text {
+        height: 100%;
+        padding: 20px 5px;
+    }
+    .b6Text h4 {
+        font: 23px/22px "CalibriLight";
+    }
+    .b7 h2 {
+        margin: 20px auto 0;
+        font: 40px/40px "CalibriRegular";
+        width: 100%;
+    }
+    .b7Itsructions h3 {
+        padding: 5px 20px;
+        font: 30px/24px "CalibriLight";
+        margin-top: 20px;
+        width: 100%;
+    }
+    .b7Guardianship h3 {
+        padding: 5px 20px;
+        font: 28px/24px "CalibriLight";
+        margin-top: 20px;
+        width: 100%;
+    }
+    .b7Storage h3 {
+        margin-bottom: 0;
+        padding: 5px 20px;
+        font: 30px/24px "CalibriLight";
+        margin-top: 20px;
+        width: 100%;
+    }
+    .b7 p {
+        font: 12px/13px "CalibriRegular";
+        border: 10px solid #1F55A7;
+        padding: 23px 11px;
+    }
+    .b8Wrap {
+        background: url(../img/bgB8.jpg) no-repeat center center;
+        height: 1100px;
+        background-size: cover;
+    }
+    .b8Statistic p {
+        margin-top: 26px;
+        font: 18px/21px "CalibriRegular";
+    }
+    .b9 {
+        padding-bottom: 40px;
+    }
+    .b9 h2 {
+        margin: 20px auto 0;
+        font: 37px/37px "CalibriRegular";
+        width: 100%;
+    }
+    .b9Review p {
+        margin-top: 28px;
+        font: 18px/19px "CalibriRegular";
+    }
+    .b10Wrap {
+        background: url(../img/bgB10.jpg) repeat left top;
+        height: 1250px;
+        background-size: cover;
+    }
+    .b10 h2 {
+        margin: 20px auto 0;
+        font: 40px/40px "CalibriRegular";
+        text-align: center;
+        width: 100%;
+    }
+    .b10Foto {
+        padding: 0 30px;
+        text-align: center;
+    }
+    .b10Foto img {
+        width: 71%;
+        height: auto;
+    }
+    .b10Review {
+        padding: 10px;
+    }
+    .b11FormWrap {
+        margin: 20px auto;
+        padding: 10px;
+    }
+    .b11 {
+        background: url(../img/b4Product.png) no-repeat center 91%;
+        height: 881px;
+        background-size: 74%;
+    }
+}
+@media all and (max-width: 413px) and (min-width: 375px) {
+    .nav {
+        display: none;
+    }
+    .b1 h1 {
+        margin-top: 55px;
+        font: 28px/32px "CalibriBold";
+    }
+    .b1 p {
+        margin-top: 20px;
+        font: 16px/22px "CalibriLight";
+    }
+    .b2Wrap {
+        background: url(../img/bgB2.jpg) no-repeat center center;
+        height: 1200px;
+        background-size: cover;
+    }
+    .b2 h2 {
+        width: 100%;
+        margin: 20px auto 0;
+        font: 28px/33px "CalibriRegular";
+    }
+    .b2Item1 {
+        margin-top: 15px;
+        padding-left: 20px;
+        height: 355px;
+        background-size: 100%;
+    }
+    .b2Item1 h3 {
+        font: 22px/25px "CalibriItalic";
+        margin-top: 240px;
+    }
+    .b2Item2 {
+        margin-top: 15px;
+        padding-left: 20px;
+        background-size: 100%;
+        height: 355px;
+    }
+    .b2Item2 h3 {
+        font: 22px/25px "CalibriItalic";
+        margin-top: 255px;
+    }
+    .b2Item3 {
+        margin-top: 15px;
+        background: url(../img/b2Item3.png) no-repeat center center;
+        padding-left: 37px;
+        background-size: 100%;
+        height: 355px;
+    }
+    .b2Item3 h3 {
+        font: 19px/25px "CalibriItalic";
+        margin-top: 241px;
+    }
+    .b3 {
+        height: auto;
+        padding: 20px 0;
+    }
+    .b3 h2 {
+        width: 100%;
+        margin: 60px auto 0;
+        font: 33px/40px "CalibriRegular";
+    }
+    .b3Item {
+        padding: 0 10px;
+        height: 270px;
+    }
+    .b3Item p {
+        margin-top: 15px;
+        font: 15px/18px "CalibriLight";
+    }
+    .b4Wrap {
+        background: url(../img/bgB4.jpg) no-repeat center top;
+        height: 1200px;
+        background-size: cover;
+    }
+    .b4 {
+        background: url(../img/b4Product.png) no-repeat center 85%;
+        height: 1200px;
+        background-size: 95%;
+    }
+    .b4 h2 {
+        width: 100%;
+        margin: 20px auto 0;
+        font: 33px/40px "CalibriRegular";
+    }
+    .b4FormWrap {
+        margin: 30px auto;
+        padding: 15px 20px;
+    }
+    .b4FormWrap h4 {
+        font: 29px/29px "CalibriRegular";
+    }
+    .b5 h2 {
+        margin: 20px auto 0;
+        font: 40px/40px "CalibriRegular";
+        width: 100%;
+    }
+    .b5Expectations {
+        margin-top: 19px;
+        list-style-image:  url(../img/b5ListStyle.png);
+        list-style-position: inside;
+        padding-left: 0;
+    }
+    .b5Expectations li {
+        margin-top: 12px;
+        height: auto;
+        font: 19px/24px "CalibriLight";
+    }
+    .b6Wrap {
+        background: url(../img/bgB6.jpg) no-repeat center center;
+        height: 1800px;
+        background-size: cover;
+    }
+    .b6 h2 {
+        padding: 5px 0;
+        margin: 40px auto 0;
+        width: 100%;
+        font: 32px/32px "CalibriRegular";
+    }
+    .b6 h3 {
+        width: 100%;
+        font: 20px/24px "CalibriLight";
+    }
+    .b6Item {
+        margin-top: 15px;
+        height: auto;
+    }
+    .b6Text {
+        height: 100%;
+        padding: 20px 5px;
+    }
+    .b6Text h4 {
+        font: 23px/22px "CalibriLight";
+    }
+    .b7 h2 {
+        margin: 20px auto 0;
+        font: 40px/40px "CalibriRegular";
+        width: 100%;
+    }
+    .b7Itsructions h3 {
+        padding: 5px 20px;
+        font: 23px/24px "CalibriLight";
+        margin-top: 20px;
+        width: 100%;
+    }
+    .b7Guardianship h3 {
+        padding: 5px 20px;
+        font: 23px/24px "CalibriLight";
+        margin-top: 20px;
+        width: 100%;
+    }
+    .b7Storage h3 {
+        margin-bottom: 0;
+        padding: 5px 20px;
+        font: 23px/24px "CalibriLight";
+        margin-top: 20px;
+        width: 100%;
+    }
+    .b7 p {
+        font: 16px/20px "CalibriRegular";
+        border: 10px solid #1F55A7;
+        padding: 23px 11px;
+    }
+    .b8Wrap {
+        background: url(../img/bgB8.jpg) no-repeat center center;
+        height: 900px;
+        background-size: cover;
+    }
+    .b8Statistic h3 {
+        margin: 14px auto 0;
+    }
+    .b8Statistic p {
+        margin-top: 10px;
+        font: 18px/21px "CalibriRegular";
+    }
+    .b9 {
+        padding-bottom: 40px;
+    }
+    .b9 h2 {
+        margin: 20px auto 0;
+        font: 37px/37px "CalibriRegular";
+        width: 100%;
+    }
+    .b9Review p {
+        margin-top: 28px;
+        font: 16px/19px "CalibriRegular";
+    }
+    .b10Wrap {
+        background: url(../img/bgB10.jpg) repeat left top;
+        height: 1350px;
+        background-size: cover;
+    }
+    .b10 h2 {
+        margin: 20px auto 0;
+        font: 40px/40px "CalibriRegular";
+        text-align: center;
+        width: 100%;
+    }
+    .b10Foto {
+        padding: 0 30px;
+        text-align: center;
+    }
+    .b10Foto img {
+        width: 71%;
+        height: auto;
+    }
+    .b10Review {
+        padding: 10px;
+    }
+    .b11FormWrap {
+        margin: 20px auto;
+        padding: 10px;
+    }
+    .b11 {
+        background: url(../img/b4Product.png) no-repeat center 91%;
+        height: 881px;
+        background-size: 84%;
+    }
+}
+@media all and (max-width: 374px) and (min-width: 320px) {
+    .nav {
+        display: none;
+    }
+    .b1 h1 {
+        margin-top: 55px;
+        font: 24px/32px "CalibriBold";
+    }
+    .b1 p {
+        margin-top: 20px;
+        font: 21px/26px "CalibriLight";
+    }
+    .b2Wrap {
+        background: url(../img/bgB2.jpg) no-repeat center center;
+        height: 1100px;
+        background-size: cover;
+    }
+    .b2 h2 {
+        width: 100%;
+        margin: 20px auto 0;
+        font: 25px/33px "CalibriRegular";
+    }
+    .b2Item1 {
+        margin-top: 15px;
+        padding-left: 40px;
+        height: 310px;
+        background-size: 100%;
+    }
+    .b2Item1 h3 {
+        font: 15px/25px "CalibriItalic";
+        margin-top: 200px;
+    }
+    .b2Item2 {
+        margin-top: 15px;
+        padding-left: 30px;
+        background-size: 100%;
+        height: 310px;
+    }
+    .b2Item2 h3 {
+        font: 15px/25px "CalibriItalic";
+        margin-top: 219px;
+    }
+    .b2Item3 {
+        margin-top: 15px;
+        background: url(../img/b2Item3.png) no-repeat center center;
+        padding-left: 44px;
+        background-size: 100%;
+        height: 310px;
+    }
+    .b2Item3 h3 {
+        font: 15px/21px "CalibriItalic";
+        margin-top: 214px;
+    }
+    .b3 {
+        height: auto;
+        padding: 20px 0;
+    }
+    .b3 h2 {
+        width: 100%;
+        margin: 20px auto 0;
+        font: 26px/40px "CalibriRegular";
+    }
+    .b3Item {
+        padding: 0 5px;
+        height: 270px;
+    }
+    .b3Item p {
+        margin-top: 15px;
+        font: 15px/18px "CalibriLight";
+    }
+    .b4Wrap {
+        background: url(../img/bgB4.jpg) no-repeat center top;
+        height: 1000px;
+        background-size: cover;
+    }
+    .b4 {
+        background: url(../img/b4Product.png) no-repeat center 93%;
+        height: 1000px;
+        background-size: 95%;
+    }
+    .b4 h2 {
+        width: 100%;
+        margin: 20px auto 0;
+        font: 28px/33px "CalibriRegular";
+    }
+    .b4FormWrap {
+        margin: 30px auto;
+        padding: 15px 20px;
+    }
+    .b4FormWrap h4 {
+        font: 29px/29px "CalibriRegular";
+    }
+    .b5 h2 {
+        margin: 20px auto 0;
+        font: 32px/32px "CalibriRegular";
+        width: 100%;
+    }
+    .b5Expectations {
+        margin-top: 19px;
+        list-style-image:  url(../img/b5ListStyle.png);
+        list-style-position: inside;
+        padding-left: 0;
+    }
+    .b5Expectations li {
+        margin-top: 12px;
+        height: auto;
+        font: 19px/24px "CalibriLight";
+    }
+    .b6Wrap {
+        background: url(../img/bgB6.jpg) no-repeat center center;
+        height: 1700px;
+        background-size: cover;
+    }
+    .b6 h2 {
+        padding: 5px 0;
+        margin: 20px auto 0;
+        width: 100%;
+        font: 26px/32px "CalibriRegular";
+    }
+    .b6 h3 {
+        width: 100%;
+        font: 16px/24px "CalibriLight";
+    }
+    .b6Item {
+        margin-top: 15px;
+        height: auto;
+    }
+    .b6Text {
+        height: 100%;
+        padding: 20px 5px;
+    }
+    .b6Text h4 {
+        font: 21px/22px "CalibriLight";
+    }
+    .b7 h2 {
+        margin: 20px auto 0;
+        font: 32px/32px "CalibriRegular";
+        width: 100%;
+    }
+    .b7Itsructions h3 {
+        padding: 5px 20px;
+        font: 23px/24px "CalibriLight";
+        margin-top: 20px;
+        width: 100%;
+    }
+    .b7Guardianship h3 {
+        padding: 5px 20px;
+        font: 23px/24px "CalibriLight";
+        margin-top: 20px;
+        width: 100%;
+    }
+    .b7Storage h3 {
+        margin-bottom: 0;
+        padding: 5px 20px;
+        font: 23px/24px "CalibriLight";
+        margin-top: 20px;
+        width: 100%;
+    }
+    .b7 p {
+        font: 22px/28px "CalibriRegular";
+        border: 10px solid #1F55A7;
+        padding: 23px 11px;
+    }
+    .b8Wrap {
+        background: url(../img/bgB8.jpg) no-repeat center center;
+        height: 900px;
+        background-size: cover;
+    }
+    .b8Statistic h3 {
+        margin: 14px auto 0;
+    }
+    .b8Statistic p {
+        margin-top: 10px;
+        font: 18px/21px "CalibriRegular";
+    }
+    .b9 {
+        padding-bottom: 40px;
+    }
+    .b9 h2 {
+        margin: 20px auto 0;
+        font: 37px/37px "CalibriRegular";
+        width: 100%;
+    }
+    .b9Review p {
+        margin-top: 28px;
+        font: 16px/19px "CalibriRegular";
+    }
+    .b10Wrap {
+        background: url(../img/bgB10.jpg) repeat left top;
+        height: 1350px;
+        background-size: cover;
+    }
+    .b10 h2 {
+        margin: 20px auto 0;
+        font: 40px/40px "CalibriRegular";
+        text-align: center;
+        width: 100%;
+    }
+    .b10Foto {
+        padding: 0 30px;
+        text-align: center;
+    }
+    .b10Foto img {
+        width: 71%;
+        height: auto;
+    }
+    .b10Review {
+        padding: 10px;
+    }
+    .b11FormWrap {
+        margin: 20px auto;
+        padding: 10px;
+    }
+    .b11 {
+        background: url(../img/b4Product.png) no-repeat center 91%;
+        height: 881px;
+        background-size: 84%;
+    }
+}
+/*.b2,*/
+/*.b3 {*/
+    /*clear: none;*/
+    /*}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
