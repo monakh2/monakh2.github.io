@@ -4145,7 +4145,6 @@ window.addEventListener('resize', function () {
 'use strict';
 
 $('.page__footer .year').html(new Date().getFullYear());
-"use strict";
 'use strict';
 
 (function ($, viewport) {
@@ -4378,5 +4377,6 @@ $(function () {
 // 		);
 // 	});
 // })(jQuery, ResponsiveBootstrapToolkit);
+"use strict";
 "use strict";
 "use strict";
