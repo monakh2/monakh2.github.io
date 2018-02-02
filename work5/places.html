@@ -1,0 +1,904 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>geoGuru | Места</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta content="telephone=no" name="format-detection">
+        <!-- This make sence for mobile browsers. It means, that content has been optimized for mobile browsers -->
+        <meta name="HandheldFriendly" content="true">
+
+
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link href="static/css/separate-css/bootstrap-grid.min.css" rel="stylesheet" type="text/css">
+
+        <link href="static/css/separate-css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/separate-css/roundedelegance.css" rel="stylesheet" type="text/css">
+
+        <link href="static/css/separate-css/slick.css" rel="stylesheet" type="text/css">
+        <link href="static/css/separate-css/jquery.arcticmodal.css" rel="stylesheet" type="text/css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+
+
+        <!--[if (gt IE 9)|!(IE)]><!-->
+        <link href="static/css/mainrabia8rrudi.min.css" rel="stylesheet" type="text/css">
+        <!--<![endif]-->
+        <link href="static/css/mediarabia8rrudi.min.css" rel="stylesheet" type="text/css">
+        <script>
+            (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+        </script>
+    </head>
+
+    <body class="map-body">
+        <div class="wrap">
+            <div class="menu">
+                <span></span>
+            </div>
+            <div class="menu_wrap">
+                <div class="cross">
+                    <img src="static/img/assets/main-page/cross-menu.png" alt="">
+                </div>
+                <div data-menuanchor="start" class="logo">
+                    <a href="#start">
+                        <img src="static/img/assets/main-page/menu-logo.png" alt="">
+                    </a>
+                </div>
+                <div class="log-in-wrap"><a href="">Войти / Зарегистрироваться</a>
+                </div>
+                <div class="loged-wrap">
+                    <div class="account-info">
+                        <div class="avatar-wrap">
+                            <img src="static/img/assets/map/head-avatar.png" alt="">
+                        </div>
+                        <div class="name-wrap">
+                            <p><a href="">Каролина Андрощенко</a>
+                            </p>
+                        </div>
+                        <a href="" class="log-out-btn"></a>
+                    </div>
+                    <div class="login-button">
+                        <a href=""></a>
+                    </div>
+                </div>
+                <ul id="menu">
+                    <li><a href="">Как работает GeoGuru</a>
+                    </li>
+                    <li><a href="/useful.html">Полезное</a>
+                    </li>
+                    <li><a href="/blogArchive.html">Блог GeoGuru</a>
+                    </li>
+                    <li><a href="">Guru FAQ</a>
+                    </li>
+                    <li><a href="">Контакты</a>
+                    </li>
+                </ul>
+                <div class="social_wrap">
+                    <a href="" class="vk-link" target="_blank"></a>
+                    <a href="" class="inst-link" target="_blank"></a>
+                    <a href="" class="facebook-link" target="_blank"></a>
+                </div>
+            </div>
+            <div id="mapwrap"></div>
+            <div class="head-line">
+                <div class="top-line">
+                    <div class="container">
+                        <div class="row">
+                            <div class="map-logo-wrap">
+                                <a href="/index.html">
+                                    <img src="static/img/assets/map/logo.png" alt="">
+                                </a>
+                            </div>
+                            <div class="head-links-wrap">
+                                <ul>
+                                    <li><a href="/places.html">Места</a>
+                                    </li>
+                                    <li><a href="/routes.html">Маршруты</a>
+                                    </li>
+                                    <li><a href="/excursionsArchive.html">Экскурсии</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="loged-wrap">
+                                <div class="account-info">
+                                    <div class="avatar-wrap">
+                                        <img src="static/img/assets/map/head-avatar.png" alt="">
+                                    </div>
+                                    <div class="name-wrap">
+                                        <p><a href="">Каролина Андрощенко</a>
+                                        </p>
+                                    </div>
+                                    <a href="" class="log-out-btn"></a>
+                                </div>
+                                <div class="login-button">
+                                    <a href=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-line">
+                    <div class="container">
+                        <div class="row">
+                            <a class="my-position" href="#" title="Определить местоположение"></a>
+                            <div class="select-wrap">
+                                <select>
+                                    <option value="">Тайланд</option>
+                                    <option value="">Тайланд</option>
+                                    <option value="">Тайланд</option>
+                                    <option value="">Тайланд</option>
+                                    <option value="">Тайланд</option>
+                                    <option value="">Тайланд</option>
+                                </select>
+                            </div>
+                            <div class="select-wrap">
+                                <select>
+                                    <option value="">Пхукет</option>
+                                    <option value="">Пхукет</option>
+                                    <option value="">Пхукет</option>
+                                    <option value="">Пхукет</option>
+                                    <option value="">Пхукет</option>
+                                    <option value="">Пхукет</option>
+                                </select>
+                            </div>
+                            <form action="#">
+                                <input type="text" placeholder="Поиск среди объектов">
+                                <input type="submit" value="">
+                            </form>
+                            <a href="" class="category-btn">Категории</a>
+                            <a href="" class="reset-btn">
+                                <p>Сбросить<span></span>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="" class="category-arrow"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+                    <div class="categories-wrap">
+                        <div class="container">
+                            <div class="row">
+                                <div class="category-block restorants">
+                                    <h2 class="cat-title"><a data-cat="restorants" href="">Рестораны</a></h2>
+                                    <ul>
+                                        <li><a href="">Тайские</a>
+                                        </li>
+                                        <li><a href="">Буфет</a>
+                                        </li>
+                                        <li><a href="">Русские</a>
+                                        </li>
+                                        <li><a href="">Международные</a>
+                                        </li>
+                                        <li><a href="">Коктейль бары</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-block tourism">
+                                    <h2 class="cat-title"><a data-cat="tourism" href="">Туризм</a></h2>
+                                    <ul>
+                                        <li><a href="">Эко-туризм</a>
+                                        </li>
+                                        <li><a href="">Исторический</a>
+                                        </li>
+                                        <li><a href="">Храмы и религия</a>
+                                        </li>
+                                        <li><a href="">Спортивный</a>
+                                        </li>
+                                        <li><a href="">Экстрим</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-block shoping">
+                                    <h2 class="cat-title"><a data-cat="shoping" href="">Шоппинг</a></h2>
+                                    <ul>
+                                        <li><a href="">Брендовый</a>
+                                        </li>
+                                        <li><a href="">Моллы</a>
+                                        </li>
+                                        <li><a href="">Антиквариат</a>
+                                        </li>
+                                        <li><a href="">Медицинский</a>
+                                        </li>
+                                        <li><a href="">Все для дома</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-block beaches">
+                                    <h2 class="cat-title"><a data-cat="beaches" href="">Пляжи</a></h2>
+                                    <ul>
+                                        <li><a href="">Дикие</a>
+                                        </li>
+                                        <li><a href="">Для всей семьи</a>
+                                        </li>
+                                        <li><a href="">Нудистские</a>
+                                        </li>
+                                        <li><a href="">Платные</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-block transport">
+                                    <h2 class="cat-title"><a data-cat="transport" href="">Транспорт</a></h2>
+                                    <ul>
+                                        <li><a href="">Автобусы</a>
+                                        </li>
+                                        <li><a href="">Такси</a>
+                                        </li>
+                                        <li><a href="">Тук-туки</a>
+                                        </li>
+                                        <li><a href="">Мото и велопрокат</a>
+                                        </li>
+                                        <li><a href="">Прокат авто</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-block hotels">
+                                    <h2 class="cat-title"><a data-cat="hotels" href="">Отели</a></h2>
+                                    <ul>
+                                        <li><a href="">Апартаменты</a>
+                                        </li>
+                                        <li><a href="">2 звезды</a>
+                                        </li>
+                                        <li><a href="">3 звезды</a>
+                                        </li>
+                                        <li><a href="">4 звезды</a>
+                                        </li>
+                                        <li><a href="">5 звезд</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-block spa">
+                                    <h2 class="cat-title"><a data-cat="spa" href="">Spa</a></h2>
+                                    <ul>
+                                        <li><a href="">Spa-салоны</a>
+                                        </li>
+                                        <li><a href="">Массаж</a>
+                                        </li>
+                                        <li><a href="">Акупунктура</a>
+                                        </li>
+                                        <li><a href="">Аюрведа</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-block medicin">
+                                    <h2 class="cat-title"><a data-cat="medicin" href="">Медицина</a></h2>
+                                    <ul>
+                                        <li><a href="">Клиники</a>
+                                        </li>
+                                        <li><a href="">Частные врачи</a>
+                                        </li>
+                                        <li><a href="">Стоматология</a>
+                                        </li>
+                                        <li><a href="">Аптеки</a>
+                                        </li>
+                                        <li><a href="">Вет.лечебницы</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-block nightlife">
+                                    <h2 class="cat-title"><a data-cat="nightlife" href="">Ночная жизнь</a></h2>
+                                    <ul>
+                                        <li><a href="">Кабаре</a>
+                                        </li>
+                                        <li><a href="">Шоу бары</a>
+                                        </li>
+                                        <li><a href="">Дискотеки</a>
+                                        </li>
+                                        <li><a href="">Экзотерические</a>
+                                        </li>
+                                        <li><a href="">Танцы</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-block sport">
+                                    <h2 class="cat-title"><a data-cat="sport" href="">Спорт</a></h2>
+                                    <ul>
+                                        <li><a href="">Спорт магазины</a>
+                                        </li>
+                                        <li><a href="">Все для бега</a>
+                                        </li>
+                                        <li><a href="">Спортклубы</a>
+                                        </li>
+                                        <li><a href="">Стадионы</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-block condo">
+                                    <h2 class="cat-title"><a data-cat="condo" href="">Кондоминиумы</a></h2>
+                                    <ul>
+                                        <li><a href="">Частные</a>
+                                        </li>
+                                        <li><a href="">Сетевые</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-block guesthous">
+                                    <h2 class="cat-title"><a data-cat="guesthous" href="">Гестхаузы</a></h2>
+                                    <ul>
+                                        <li><a href="">Частные</a>
+                                        </li>
+                                        <li><a href="">Сетевые</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-block fun">
+                                    <h2 class="cat-title"><a data-cat="fun" href="">Развлечения</a></h2>
+                                    <ul>
+                                        <li><a href="">Аква-парки</a>
+                                        </li>
+                                        <li><a href="">Зоопарки</a>
+                                        </li>
+                                        <li><a href="">Питомники</a>
+                                        </li>
+                                        <li><a href="">Отдых на воде</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-line">
+                <a href=""><i class="fa fa-caret-up" aria-hidden="true"></i></a>
+                <div>
+                    <div class="list-line">
+                        <div class="container">
+                            <div class="row">
+                                <ul>
+                                    <li>
+                                        <p data-cat="medicin">Медицина</p>
+                                    </li>
+                                    <li>
+                                        <p data-cat="tourism">Туризм</p>
+                                    </li>
+                                    <li>
+                                        <p data-cat="condo">Кондоминиумы</p>
+                                    </li>
+                                    <li>
+                                        <p data-cat="spa">Spa</p>
+                                    </li>
+                                    <li>
+                                        <p data-cat="beaches">Пляжи</p>
+                                    </li>
+                                    <li>
+                                        <p data-cat="restorants">Рестораны</p>
+                                    </li>
+                                    <li>
+                                        <p data-cat="guesthous">Гестхаузы</p>
+                                    </li>
+                                    <li>
+                                        <p data-cat="transport">Транспорт</p>
+                                    </li>
+                                    <li>
+                                        <p data-cat="shoping">Шоппинг</p>
+                                    </li>
+                                    <li>
+                                        <p data-cat="hotels">Отели</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icons-line">
+                        <div class="container">
+                            <div class="row">
+                                <ul>
+                                    <li>
+                                        <div class="icon-wrap medicin">
+                                            <input data-cat="medicin" type="checkbox" name="medicin">
+                                            <p class="label"></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon-wrap tourism">
+                                            <input data-cat="tourism" type="checkbox" name="tourism">
+                                            <p class="label"></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon-wrap condo">
+                                            <input data-cat="condo" type="checkbox" name="condo">
+                                            <p class="label"></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon-wrap spa">
+                                            <input data-cat="spa" type="checkbox" name="spa">
+                                            <p class="label"></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon-wrap beaches">
+                                            <input data-cat="beaches" type="checkbox" name="beaches">
+                                            <p class="label"></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon-wrap restorants">
+                                            <input data-cat="restorants" type="checkbox" name="restorants">
+                                            <p class="label"></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon-wrap guesthous">
+                                            <input data-cat="guesthous" type="checkbox" name="guesthous">
+                                            <p class="label"></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon-wrap transport">
+                                            <input data-cat="transport" type="checkbox" name="transport">
+                                            <p class="label"></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon-wrap shoping">
+                                            <input data-cat="shoping" type="checkbox" name="shoping">
+                                            <p class="label"></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon-wrap hotels">
+                                            <input data-cat="hotels" type="checkbox" name="hotels">
+                                            <p class="label"></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="left-side-wrap">
+                <div class="side-open-btn">
+                    <div class="avatar-wrap">
+                        <img src="/static/img/assets/map/big-avatar.png" alt="">
+                        <img src="/static/img/assets/map/left-side-arr.png" alt="">
+                    </div>
+                </div>
+                <div class="side-head">
+                    <div class="loged-wrap">
+                        <div class="avatar-wrap">
+                            <img src="/static/img/assets/map/big-avatar.png" alt="">
+                        </div>
+                        <div class="name-wrap">
+                            <p><a href="">Каролина Андрощенко</a>
+                            </p>
+                        </div>
+                    </div>
+                    <a href=""><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+                </div>
+                <div class="side-menu-wrap">
+                    <ul>
+                        <li><a href="">Мои места</a>
+                        </li>
+                        <li><a href="">Мои маршруты</a>
+                        </li>
+                        <li><a href="">Мои экскурсии</a>
+                        </li>
+                        <li><a href="">Избранное</a>
+                        </li>
+                        <li><a href="">Сообщения</a>
+                        </li>
+                        <li><a href="">Помощь в дороге</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-side-wrap places">
+                <div class="swipe-div"></div>
+                <div class="result-open-btn">
+                    <a href="#"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+                    <p class="res-cont">(701)</p>
+                </div>
+                <div class="result-head-line">
+                    <p>Все объекты (<span class="result-cout">701</span>)</p>
+                    <a href="" class="new-obj">Новый объект</a>
+                </div>
+                <div class="side-bar-places">
+                    <div class="filter-block">
+                        <div class="filter-line">
+                            <div class="sort-block">
+                                <p class="filt-name">Сортировать</p>
+                                <select>
+                                    <option value="">Популярность</option>
+                                    <option value="">Популярность</option>
+                                    <option value="">Популярность</option>
+                                    <option value="">Популярность</option>
+                                </select>
+                            </div>
+                            <div class="kitchen-block">
+                                <p class="filt-name">Кухня</p>
+                                <select>
+                                    <option value="">Все</option>
+                                    <option value="">Все</option>
+                                    <option value="">Все</option>
+                                    <option value="">Все</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="result-wrap">
+                            <div class="result-block">
+                                <div class="result-info-line">
+                                    <div class="img-block">
+                                        <img src="static/img/assets/map/result-ex.jpg" alt="">
+                                    </div>
+                                    <div class="name-block">
+                                        <div class="mark-wrap">
+                                            <div class="stars-wrap">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="mark">4</p>
+                                        </div>
+                                        <p class="name"><span>Ресторан</span> “Harbour”</p>
+                                        <p class="prices">Порядок цен: 30$ с человека</p>
+                                    </div>
+                                </div>
+                                <div class="result-position">
+                                    <p class="adress">2 Muen-ngern Road Beach Kathu Tambon Patong</p>
+                                    <p class="distance">До вас: 12 км</p>
+                                </div>
+                                <div class="info-buttons">
+                                    <a href="" class="recalls">Все отзывы (<span class="count">22</span>)</a>
+                                    <a href="" class="to-favorite"><i class="fa fa-star" aria-hidden="true"></i>В избранное</a>
+                                    <div class="discount">
+                                        <p>-20%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="result-block">
+                                <div class="result-info-line">
+                                    <div class="img-block">
+                                        <img src="static/img/assets/map/result-ex.jpg" alt="">
+                                    </div>
+                                    <div class="name-block">
+                                        <div class="mark-wrap">
+                                            <div class="stars-wrap">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="mark">4</p>
+                                        </div>
+                                        <p class="name"><span>Ресторан</span> “Harbour”</p>
+                                        <p class="prices">Порядок цен: 30$ с человека</p>
+                                    </div>
+                                </div>
+                                <div class="result-position">
+                                    <p class="adress">2 Muen-ngern Road Beach Kathu Tambon Patong</p>
+                                    <p class="distance">До вас: 12 км</p>
+                                </div>
+                                <div class="info-buttons">
+                                    <a href="" class="recalls">Все отзывы (<span class="count">22</span>)</a>
+                                    <a href="" class="to-favorite"><i class="fa fa-star" aria-hidden="true"></i>В избранное</a>
+                                    <div class="discount">
+                                        <p>-20%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="result-block">
+                                <div class="result-info-line">
+                                    <div class="img-block">
+                                        <img src="static/img/assets/map/result-ex.jpg" alt="">
+                                    </div>
+                                    <div class="name-block">
+                                        <div class="mark-wrap">
+                                            <div class="stars-wrap">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="mark">4</p>
+                                        </div>
+                                        <p class="name"><span>Ресторан</span> “Harbour”</p>
+                                        <p class="prices">Порядок цен: 30$ с человека</p>
+                                    </div>
+                                </div>
+                                <div class="result-position">
+                                    <p class="adress">2 Muen-ngern Road Beach Kathu Tambon Patong</p>
+                                    <p class="distance">До вас: 12 км</p>
+                                </div>
+                                <div class="info-buttons">
+                                    <a href="" class="recalls">Все отзывы (<span class="count">22</span>)</a>
+                                    <a href="" class="to-favorite"><i class="fa fa-star" aria-hidden="true"></i>В избранное</a>
+                                    <div class="discount">
+                                        <p>-20%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="result-block">
+                                <div class="result-info-line">
+                                    <div class="img-block">
+                                        <img src="static/img/assets/map/result-ex.jpg" alt="">
+                                    </div>
+                                    <div class="name-block">
+                                        <div class="mark-wrap">
+                                            <div class="stars-wrap">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="mark">4</p>
+                                        </div>
+                                        <p class="name"><span>Ресторан</span> “Harbour”</p>
+                                        <p class="prices">Порядок цен: 30$ с человека</p>
+                                    </div>
+                                </div>
+                                <div class="result-position">
+                                    <p class="adress">2 Muen-ngern Road Beach Kathu Tambon Patong</p>
+                                    <p class="distance">До вас: 12 км</p>
+                                </div>
+                                <div class="info-buttons">
+                                    <a href="" class="recalls">Все отзывы (<span class="count">22</span>)</a>
+                                    <a href="" class="to-favorite"><i class="fa fa-star" aria-hidden="true"></i>В избранное</a>
+                                    <div class="discount">
+                                        <p>-20%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="result-block">
+                                <div class="result-info-line">
+                                    <div class="img-block">
+                                        <img src="static/img/assets/map/result-ex.jpg" alt="">
+                                    </div>
+                                    <div class="name-block">
+                                        <div class="mark-wrap">
+                                            <div class="stars-wrap">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="mark">4</p>
+                                        </div>
+                                        <p class="name"><span>Ресторан</span> “Harbour”</p>
+                                        <p class="prices">Порядок цен: 30$ с человека</p>
+                                    </div>
+                                </div>
+                                <div class="result-position">
+                                    <p class="adress">2 Muen-ngern Road Beach Kathu Tambon Patong</p>
+                                    <p class="distance">До вас: 12 км</p>
+                                </div>
+                                <div class="info-buttons">
+                                    <a href="" class="recalls">Все отзывы (<span class="count">22</span>)</a>
+                                    <a href="" class="to-favorite"><i class="fa fa-star" aria-hidden="true"></i>В избранное</a>
+                                    <div class="discount">
+                                        <p>-20%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="result-block">
+                                <div class="result-info-line">
+                                    <div class="img-block">
+                                        <img src="static/img/assets/map/result-ex.jpg" alt="">
+                                    </div>
+                                    <div class="name-block">
+                                        <div class="mark-wrap">
+                                            <div class="stars-wrap">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="mark">4</p>
+                                        </div>
+                                        <p class="name"><span>Ресторан</span> “Harbour”</p>
+                                        <p class="prices">Порядок цен: 30$ с человека</p>
+                                    </div>
+                                </div>
+                                <div class="result-position">
+                                    <p class="adress">2 Muen-ngern Road Beach Kathu Tambon Patong</p>
+                                    <p class="distance">До вас: 12 км</p>
+                                </div>
+                                <div class="info-buttons">
+                                    <a href="" class="recalls">Все отзывы (<span class="count">22</span>)</a>
+                                    <a href="" class="to-favorite"><i class="fa fa-star" aria-hidden="true"></i>В избранное</a>
+                                    <div class="discount">
+                                        <p>-20%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="right-side-bar-two">
+                <div class="result-open-btn">
+                    <a href=""><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+                </div>
+                <div class="result-head-line">
+                    <p>Введите название объекта</p>
+                    <a href="">Сохранить</a>
+                </div>
+                <div class="add-object-wrap">
+                    <form action="#">
+                        <div class="photo-line-wrap">
+                            <div class="preview-wrap">
+                                <p class="label">Превью объекта :</p>
+                                <div>
+                                    <p>Добавить
+                                        <img src="static/img/assets/map/plus.png" alt="">фото</p>
+                                    <img id="preview-img" src="#" alt="your image" />
+                                    <input required type="file" name="preview">
+                                </div>
+                            </div>
+                            <div class="upload-wrap">
+                                <p class="label">Фото для слайдера :</p>
+                                <div>
+                                    <input required type="file" name="slide">
+                                    <p>
+                                        <img src="static/img/assets/map/down-img.png" alt="">Загрузить файл.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field-line">
+                            <p class="label">Название :</p>
+                            <input minlength="2" required type="text" name="name">
+                        </div>
+                        <div class="field-line">
+                            <p class="label">Адрес объекта:</p>
+                            <input minlength="2" required type="text" name="adress">
+                        </div>
+                        <div class="field-line">
+                            <p class="label">Телефон:</p>
+                            <input minlength="7" pattern="^[0-9]{5,}$" type="tel" name="phone">
+                        </div>
+                        <div class="field-line">
+                            <p class="label">Web-site:</p>
+                            <input minlength="2" type="text" name="site">
+                        </div>
+                        <div class="field-line">
+                            <p class="label">Ваша оценка:</p>
+                            <div class="object-stars">
+                                <i class="fa fa-star" data-mark="5" aria-hidden="true"></i>
+                                <i class="fa fa-star" data-mark="4" aria-hidden="true"></i>
+                                <i class="fa fa-star" data-mark="3" aria-hidden="true"></i>
+                                <i class="fa fa-star" data-mark="2" aria-hidden="true"></i>
+                                <i class="fa fa-star" data-mark="1" aria-hidden="true"></i>
+                            </div>
+                            <input type="hidden" name="mark">
+                        </div>
+                        <div class="field-line">
+                            <p class="label">Категория:</p>
+                            <div class="obj-select-wrap">
+                                <select required name="category">
+                                    <option value="">Выбрать</option>
+                                    <option value="">Выбрать</option>
+                                    <option value="">Выбрать</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="field-line">
+                            <p class="label">Подкатегория:</p>
+                            <div class="obj-select-wrap">
+                                <select required name="subcategory">
+                                    <option value="">Тайские</option>
+                                    <option value="">Тайские</option>
+                                    <option value="">Тайские</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="field-line">
+                            <p class="label">Детское меню:</p>
+                            <div class="obj-select-wrap">
+                                <select name="child-menu">
+                                    <option value="">Есть</option>
+                                    <option value="">нет</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="field-line">
+                            <p class="label">Режим работы:</p>
+                            <div class="time-wrap">
+                                <select name="start">
+                                    <option value="">начало</option>
+                                    <option value="">начало</option>
+                                    <option value="">начало</option>
+                                </select>
+                                <select name="off">
+                                    <option value="">конец</option>
+                                    <option value="">конец</option>
+                                    <option value="">конец</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="field-line">
+                            <p class="label">Комментарий:</p>
+                            <input type="text" name="comment">
+                        </div>
+                        <input type="submit" value="Сохранить объект">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="modal">
+            <div class="login-modal">
+                <div class="modal-wrap">
+                    <h3>Вход в аккаунт</h3>
+                    <form class="form-login" action="#">
+                        <input type="email" name="email" placeholder="Ваш E-mail" required="">
+                        <input type="password" name="pass" placeholder="Ваш пароль" required="">
+                        <div class="form-login__register register">
+                            <a class="register__btn" href="#" title="Регистрация">Регистрация</a>
+                            <p class="register__social">Вход через :
+                                <a class="facebook-link" href="#"></a>
+                                <a class="google-link" href="#"></a>
+                            </p>
+                        </div>
+                        <input type="submit" value="Войти">
+                        <a class="form-login__btn-forgot-pass" href="#">Забыли пароль?</a>
+                    </form>
+                </div>
+            </div>
+            <div class="registration-modal">
+                <div class="modal-wrap">
+                    <h3>Регистрация</h3>
+                    <form class="form-registration">
+                        <div class="control-group">
+                            <input class="form-registration__mail" type="email" name="email" placeholder="Ваш E-mail" required data-validation-required-message="E-mail - обязательное поле" data-validation-email-message="Неправильный формат E-mail" />
+                            <p class="help-block"></p>
+                        </div>
+                        <div class="control-group">
+                            <div class="controls">
+                                <input type="password" name="pass" placeholder="Ваш пароль" data-validation-required-message="Пароль - обязательное поле" required />
+                                <p class="help-block"></p>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="controls">
+                                <input type="password" name="repass" placeholder="Повторите пароль" data-validation-match-match="pass" data-validation-match-message="Пароли должны совпадать" data-validation-required-message="Пароль - обязательное поле" required />
+                                <p class="help-block"></p>
+                            </div>
+                        </div>
+                        <p class="form-registration__footer register__social">Регистрация через :
+                            <a class="facebook-link" href="#"></a>
+                            <a class="google-link" href="#"></a>
+                        </p>
+                        <input class="form-registration__btn" type="submit" value="Подтвердить">
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+        <!--[if lt IE 9]>
+<script src="libs/html5shiv/es5-shim.min.js"></script>
+<script src="libs/html5shiv/html5shiv.min.js"></script>
+<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoZ6hTP6pfjWIiT_CvclzR_jLmD4ZN700"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+        <script src="static/js/separate-js/jqBootstrapValidation.js"></script>
+        <script src="static/js/separate-js/fullpage.fadingEffect.limited.min.js"></script>
+        <script src="static/js/separate-js/jquery.fullPage.js"></script>
+        <script src="static/js/separate-js/jquery.touchSwipe.min.js"></script>
+        <script src="static/js/separate-js/slick.min.js"></script>
+        <script src="static/js/separate-js/jquery.arcticmodal.js"></script>
+        <script src="static/js/separate-js/jquery.accordion.js"></script>
+        <script src="static/js/separate-js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="static/js/separate-js/common.js"></script>
+        <script src="static/js/separate-js/map-functions.js"></script>
+        <!-- Yandex.Metrika counter -->
+        <!-- /Yandex.Metrika counter -->
+        <!-- Google Analytics counter -->
+        <!-- /Google Analytics counter -->
+    </body>
+
+</html>
