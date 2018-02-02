@@ -660,7 +660,7 @@ a, .btn, .btn-back, .post-info a, .post-footer a {
 }
 
 .modal-wrap .facebook-link {
-  background-image: url("../img/svg-sprite/spriterabia8rrudi.svg");
+  background-image: url("../img/svg-sprite/sprite.svg");
   background-position: -4px -834px;
   width: 18px;
   height: 18px;
@@ -669,7 +669,7 @@ a, .btn, .btn-back, .post-info a, .post-footer a {
 }
 
 .modal-wrap .google-link {
-  background-image: url("../img/svg-sprite/spriterabia8rrudi.svg");
+  background-image: url("../img/svg-sprite/sprite.svg");
   background-position: -4px -812px;
   width: 18px;
   height: 18px;
@@ -2480,7 +2480,7 @@ h2 {
 
 .icon-bus {
   display: inline-block;
-  background-image: url("../img/svg-sprite/spriterabia8rrudi.svg");
+  background-image: url("../img/svg-sprite/sprite.svg");
   background-position: -4px -447px;
   width: 26px;
   height: 27px;
@@ -2489,7 +2489,7 @@ h2 {
 
 .icon-mark {
   display: inline-block;
-  background-image: url("../img/svg-sprite/spriterabia8rrudi.svg");
+  background-image: url("../img/svg-sprite/sprite.svg");
   background-position: -4px -768px;
   width: 18px;
   height: 18px;
@@ -2498,7 +2498,7 @@ h2 {
 
 .icon-car {
   display: inline-block;
-  background-image: url("../img/svg-sprite/spriterabia8rrudi.svg");
+  background-image: url("../img/svg-sprite/sprite.svg");
   background-position: -4px -533px;
   width: 27px;
   height: 20px;
@@ -2507,7 +2507,7 @@ h2 {
 
 .icon-motorcycle {
   display: inline-block;
-  background-image: url("../img/svg-sprite/spriterabia8rrudi.svg");
+  background-image: url("../img/svg-sprite/sprite.svg");
   background-position: -4px -580px;
   width: 27px;
   height: 19px;
@@ -2516,7 +2516,7 @@ h2 {
 
 .icon-auto-rickshaw {
   display: inline-block;
-  background-image: url("../img/svg-sprite/spriterabia8rrudi.svg");
+  background-image: url("../img/svg-sprite/sprite.svg");
   background-position: -4px -170px;
   width: 32px;
   height: 22px;
@@ -2525,7 +2525,7 @@ h2 {
 
 .icon-warning {
   display: inline-block;
-  background-image: url("../img/svg-sprite/spriterabia8rrudi.svg");
+  background-image: url("../img/svg-sprite/sprite.svg");
   background-position: -4px -741px;
   width: 23px;
   height: 23px;
@@ -2534,7 +2534,7 @@ h2 {
 
 .icon-pencil {
   display: inline-block;
-  background-image: url("../img/svg-sprite/spriterabia8rrudi.svg");
+  background-image: url("../img/svg-sprite/sprite.svg");
   background-position: -4px -92px;
   width: 35px;
   height: 35px;
@@ -2543,7 +2543,7 @@ h2 {
 
 .icon-arrow-back {
   display: inline-block;
-  background-image: url("../img/svg-sprite/spriterabia8rrudi.svg");
+  background-image: url("../img/svg-sprite/sprite.svg");
   background-position: -4px -131px;
   width: 35px;
   height: 35px;
@@ -2552,7 +2552,7 @@ h2 {
 
 .icon-hiking {
   display: inline-block;
-  background-image: url("../img/svg-sprite/spriterabia8rrudi.svg");
+  background-image: url("../img/svg-sprite/sprite.svg");
   background-position: -4px -603px;
   width: 17px;
   height: 25px;
@@ -2561,7 +2561,7 @@ h2 {
 
 .icon-hiking_white {
   display: inline-block;
-  background-image: url("../img/svg-sprite/spriterabia8rrudi.svg");
+  background-image: url("../img/svg-sprite/sprite.svg");
   background-position: -4px -690px;
   width: 17px;
   height: 25px;
@@ -3638,7 +3638,7 @@ h2 {
 
 .my-position {
   display: block;
-  background-image: url("../img/svg-sprite/spriterabia8rrudi.svg");
+  background-image: url("../img/svg-sprite/sprite.svg");
   background-position: -4px -4px;
   width: 40px;
   height: 40px;
@@ -3646,7 +3646,7 @@ h2 {
 }
 
 .my-position:hover {
-  background-image: url("../img/svg-sprite/spriterabia8rrudi.svg");
+  background-image: url("../img/svg-sprite/sprite.svg");
   background-position: -4px -48px;
   width: 40px;
   height: 40px;
@@ -6426,7 +6426,7 @@ h2 {
 }
 
 .transport-list .car .icon-car {
-  background-image: url("../img/svg-sprite/spriterabia8rrudi.svg");
+  background-image: url("../img/svg-sprite/sprite.svg");
   background-position: -4px -509px;
   width: 27px;
   height: 20px;
@@ -6434,7 +6434,7 @@ h2 {
 }
 
 .transport-list .bus .icon-bus {
-  background-image: url("../img/svg-sprite/spriterabia8rrudi.svg");
+  background-image: url("../img/svg-sprite/sprite.svg");
   background-position: -4px -416px;
   width: 26px;
   height: 27px;
@@ -6442,7 +6442,7 @@ h2 {
 }
 
 .transport-list .motorcycle .icon-motorcycle {
-  background-image: url("../img/svg-sprite/spriterabia8rrudi.svg");
+  background-image: url("../img/svg-sprite/sprite.svg");
   background-position: -4px -557px;
   width: 27px;
   height: 19px;
@@ -6450,7 +6450,7 @@ h2 {
 }
 
 .transport-list .auto-rickshaw .icon-auto-rickshaw {
-  background-image: url("../img/svg-sprite/spriterabia8rrudi.svg");
+  background-image: url("../img/svg-sprite/sprite.svg");
   background-position: -4px -196px;
   width: 32px;
   height: 22px;
@@ -6458,7 +6458,7 @@ h2 {
 }
 
 .transport-list .hiking .icon-hiking {
-  background-image: url("../img/svg-sprite/spriterabia8rrudi.svg");
+  background-image: url("../img/svg-sprite/sprite.svg");
   background-position: -4px -632px;
   width: 17px;
   height: 25px;
@@ -6466,7 +6466,7 @@ h2 {
 }
 
 .transport-list .car.active .icon-car {
-  background-image: url("../img/svg-sprite/spriterabia8rrudi.svg");
+  background-image: url("../img/svg-sprite/sprite.svg");
   background-position: -4px -533px;
   width: 27px;
   height: 20px;
@@ -6474,7 +6474,7 @@ h2 {
 }
 
 .transport-list .bus.active .icon-bus {
-  background-image: url("../img/svg-sprite/spriterabia8rrudi.svg");
+  background-image: url("../img/svg-sprite/sprite.svg");
   background-position: -4px -478px;
   width: 26px;
   height: 27px;
@@ -6482,7 +6482,7 @@ h2 {
 }
 
 .transport-list .motorcycle.active .icon-motorcycle {
-  background-image: url("../img/svg-sprite/spriterabia8rrudi.svg");
+  background-image: url("../img/svg-sprite/sprite.svg");
   background-position: -4px -580px;
   width: 27px;
   height: 19px;
@@ -6490,7 +6490,7 @@ h2 {
 }
 
 .transport-list .auto-rickshaw.active .icon-auto-rickshaw {
-  background-image: url("../img/svg-sprite/spriterabia8rrudi.svg");
+  background-image: url("../img/svg-sprite/sprite.svg");
   background-position: -4px -170px;
   width: 32px;
   height: 22px;
@@ -6498,7 +6498,7 @@ h2 {
 }
 
 .transport-list .hiking.active .icon-hiking {
-  background-image: url("../img/svg-sprite/spriterabia8rrudi.svg");
+  background-image: url("../img/svg-sprite/sprite.svg");
   background-position: -4px -661px;
   width: 17px;
   height: 25px;
@@ -6791,7 +6791,7 @@ h2 {
   left: 3px;
   display: inline-block;
   margin-right: 10px;
-  background-image: url("../img/svg-sprite/spriterabia8rrudi.svg");
+  background-image: url("../img/svg-sprite/sprite.svg");
   background-position: -4px -856px;
   width: 17px;
   height: 17px;
@@ -6821,7 +6821,7 @@ h2 {
   top: 4px;
   left: -8px;
   display: inline-block;
-  background-image: url("../img/svg-sprite/spriterabia8rrudi.svg");
+  background-image: url("../img/svg-sprite/sprite.svg");
   background-position: -4px -877px;
   width: 17px;
   height: 14px;
@@ -6840,7 +6840,7 @@ h2 {
   top: 4px;
   display: inline-block;
   margin-right: 6px;
-  background-image: url("../img/svg-sprite/spriterabia8rrudi.svg");
+  background-image: url("../img/svg-sprite/sprite.svg");
   background-position: -4px -790px;
   width: 18px;
   height: 18px;
@@ -7037,7 +7037,7 @@ h2 {
 
 .icon-chat {
   display: inline-block;
-  background-image: url("../img/svg-sprite/spriterabia8rrudi.svg");
+  background-image: url("../img/svg-sprite/sprite.svg");
   background-position: -4px -323px;
   width: 28px;
   height: 27px;
@@ -7056,7 +7056,7 @@ h2 {
 .routes-modal-photo .icon-close {
   position: absolute;
   display: inline-block;
-  background-image: url("../img/svg-sprite/spriterabia8rrudi.svg");
+  background-image: url("../img/svg-sprite/sprite.svg");
   background-position: -4px -895px;
   width: 10px;
   height: 10px;
@@ -7191,7 +7191,7 @@ h2 {
   position: relative;
   left: 26px;
   display: inline-block;
-  background-image: url("../img/svg-sprite/spriterabia8rrudi.svg");
+  background-image: url("../img/svg-sprite/sprite.svg");
   background-position: -4px -385px;
   width: 27px;
   height: 27px;
@@ -7203,7 +7203,7 @@ h2 {
   top: 15px;
   left: 27px;
   display: inline-block;
-  background-image: url("../img/svg-sprite/spriterabia8rrudi.svg");
+  background-image: url("../img/svg-sprite/sprite.svg");
   background-position: -4px -354px;
   width: 27px;
   height: 27px;
@@ -7347,7 +7347,7 @@ h2 {
 }
 
 .label-dislike::before {
-  background-image: url("../img/svg-sprite/spriterabia8rrudi.svg");
+  background-image: url("../img/svg-sprite/sprite.svg");
   background-position: -4px -354px;
   width: 27px;
   height: 27px;
@@ -7355,7 +7355,7 @@ h2 {
 }
 
 .label-like::before {
-  background-image: url("../img/svg-sprite/spriterabia8rrudi.svg");
+  background-image: url("../img/svg-sprite/sprite.svg");
   background-position: -4px -385px;
   width: 27px;
   height: 27px;
@@ -7811,7 +7811,7 @@ h2 {
 .route-new .icon-close-red {
   display: inline-block;
   cursor: pointer;
-  background-image: url("../img/svg-sprite/spriterabia8rrudi.svg");
+  background-image: url("../img/svg-sprite/sprite.svg");
   background-position: -4px -909px;
   width: 9px;
   height: 9px;
@@ -8158,7 +8158,7 @@ h2 {
 .icon-photo {
   display: inline-block;
   margin-right: 8px;
-  background-image: url("../img/svg-sprite/spriterabia8rrudi.svg");
+  background-image: url("../img/svg-sprite/sprite.svg");
   background-position: -4px -877px;
   width: 17px;
   height: 14px;
