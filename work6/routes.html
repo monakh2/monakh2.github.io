@@ -1,0 +1,1088 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>geoGuru | Маршруты</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta content="telephone=no" name="format-detection">
+        <!-- This make sence for mobile browsers. It means, that content has been optimized for mobile browsers -->
+        <meta name="HandheldFriendly" content="true">
+
+
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link href="static/css/separate-css/bootstrap-grid.min.css" rel="stylesheet" type="text/css">
+
+        <link href="static/css/separate-css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/separate-css/roundedelegance.css" rel="stylesheet" type="text/css">
+
+        <link href="static/css/separate-css/slick.css" rel="stylesheet" type="text/css">
+        <link href="static/css/separate-css/jquery.arcticmodal.css" rel="stylesheet" type="text/css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+
+
+        <!--[if (gt IE 9)|!(IE)]><!-->
+        <link href="static/css/maini3b2187u8fr.min.css" rel="stylesheet" type="text/css">
+        <!--<![endif]-->
+        <link href="static/css/mediai3b2187u8fr.min.css" rel="stylesheet" type="text/css">
+        <script>
+            (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+        </script>
+    </head>
+
+    <body class="map-body page route">
+        <div class="wrap">
+            <div class="menu">
+                <span></span>
+            </div>
+            <div class="menu_wrap">
+                <div class="cross">
+                    <img src="static/img/assets/main-page/cross-menu.png" alt="">
+                </div>
+                <div data-menuanchor="start" class="logo">
+                    <a href="#start">
+                        <img src="static/img/assets/main-page/menu-logo.png" alt="">
+                    </a>
+                </div>
+                <div class="log-in-wrap"><a href="">Войти / Зарегистрироваться</a>
+                </div>
+                <div class="loged-wrap">
+                    <div class="account-info">
+                        <div class="avatar-wrap">
+                            <img src="static/img/assets/map/head-avatar.png" alt="">
+                        </div>
+                        <div class="name-wrap">
+                            <p><a href="">Каролина Андрощенко</a>
+                            </p>
+                        </div>
+                        <a href="" class="log-out-btn"></a>
+                    </div>
+                    <div class="login-button">
+                        <a href=""></a>
+                    </div>
+                </div>
+                <ul id="menu">
+                    <li><a href="">Как работает GeoGuru</a>
+                    </li>
+                    <li><a href="/useful.html">Полезное</a>
+                    </li>
+                    <li><a href="/blogArchive.html">Блог GeoGuru</a>
+                    </li>
+                    <li><a href="">Guru FAQ</a>
+                    </li>
+                    <li><a href="">Контакты</a>
+                    </li>
+                </ul>
+                <div class="social_wrap">
+                    <a href="" class="vk-link" target="_blank"></a>
+                    <a href="" class="inst-link" target="_blank"></a>
+                    <a href="" class="facebook-link" target="_blank"></a>
+                </div>
+            </div>
+            <div id="mapwrap"></div>
+            <div class="head-line">
+                <div class="top-line">
+                    <div class="container">
+                        <div class="row">
+                            <div class="map-logo-wrap">
+                                <a href="/index.html">
+                                    <img src="static/img/assets/map/logo.png" alt="">
+                                </a>
+                            </div>
+                            <div class="head-links-wrap">
+                                <ul>
+                                    <li><a href="/places.html">Места</a>
+                                    </li>
+                                    <li><a href="/routes.html">Маршруты</a>
+                                    </li>
+                                    <li><a href="/excursionsArchive.html">Экскурсии</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="loged-wrap">
+                                <div class="account-info">
+                                    <div class="avatar-wrap">
+                                        <img src="static/img/assets/map/head-avatar.png" alt="">
+                                    </div>
+                                    <div class="name-wrap">
+                                        <p><a href="">Каролина Андрощенко</a>
+                                        </p>
+                                    </div>
+                                    <a href="" class="log-out-btn"></a>
+                                </div>
+                                <div class="login-button">
+                                    <a href=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-line">
+                    <div class="container">
+                        <div class="row">
+                            <a class="my-position" href="#" title="Определить местоположение"></a>
+                            <div class="select-wrap">
+                                <select>
+                                    <option value="">Тайланд</option>
+                                    <option value="">Тайланд</option>
+                                    <option value="">Тайланд</option>
+                                    <option value="">Тайланд</option>
+                                    <option value="">Тайланд</option>
+                                    <option value="">Тайланд</option>
+                                </select>
+                            </div>
+                            <div class="select-wrap">
+                                <select>
+                                    <option value="">Пхукет</option>
+                                    <option value="">Пхукет</option>
+                                    <option value="">Пхукет</option>
+                                    <option value="">Пхукет</option>
+                                    <option value="">Пхукет</option>
+                                    <option value="">Пхукет</option>
+                                </select>
+                            </div>
+                            <form action="#">
+                                <input type="text" placeholder="Поиск среди объектов">
+                                <input type="submit" value="">
+                            </form>
+                            <a href="" class="category-btn">Категории</a>
+                            <a href="" class="reset-btn">
+                                <p>Сбросить<span></span>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="" class="category-arrow"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+                    <div class="categories-wrap">
+                        <div class="container">
+                            <div class="row">
+                                <div class="category-block restorants">
+                                    <h2 class="cat-title"><a data-cat="restorants" href="">Рестораны</a></h2>
+                                    <ul>
+                                        <li><a href="">Тайские</a>
+                                        </li>
+                                        <li><a href="">Буфет</a>
+                                        </li>
+                                        <li><a href="">Русские</a>
+                                        </li>
+                                        <li><a href="">Международные</a>
+                                        </li>
+                                        <li><a href="">Коктейль бары</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-block tourism">
+                                    <h2 class="cat-title"><a data-cat="tourism" href="">Туризм</a></h2>
+                                    <ul>
+                                        <li><a href="">Эко-туризм</a>
+                                        </li>
+                                        <li><a href="">Исторический</a>
+                                        </li>
+                                        <li><a href="">Храмы и религия</a>
+                                        </li>
+                                        <li><a href="">Спортивный</a>
+                                        </li>
+                                        <li><a href="">Экстрим</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-block shoping">
+                                    <h2 class="cat-title"><a data-cat="shoping" href="">Шоппинг</a></h2>
+                                    <ul>
+                                        <li><a href="">Брендовый</a>
+                                        </li>
+                                        <li><a href="">Моллы</a>
+                                        </li>
+                                        <li><a href="">Антиквариат</a>
+                                        </li>
+                                        <li><a href="">Медицинский</a>
+                                        </li>
+                                        <li><a href="">Все для дома</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-block beaches">
+                                    <h2 class="cat-title"><a data-cat="beaches" href="">Пляжи</a></h2>
+                                    <ul>
+                                        <li><a href="">Дикие</a>
+                                        </li>
+                                        <li><a href="">Для всей семьи</a>
+                                        </li>
+                                        <li><a href="">Нудистские</a>
+                                        </li>
+                                        <li><a href="">Платные</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-block transport">
+                                    <h2 class="cat-title"><a data-cat="transport" href="">Транспорт</a></h2>
+                                    <ul>
+                                        <li><a href="">Автобусы</a>
+                                        </li>
+                                        <li><a href="">Такси</a>
+                                        </li>
+                                        <li><a href="">Тук-туки</a>
+                                        </li>
+                                        <li><a href="">Мото и велопрокат</a>
+                                        </li>
+                                        <li><a href="">Прокат авто</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-block hotels">
+                                    <h2 class="cat-title"><a data-cat="hotels" href="">Отели</a></h2>
+                                    <ul>
+                                        <li><a href="">Апартаменты</a>
+                                        </li>
+                                        <li><a href="">2 звезды</a>
+                                        </li>
+                                        <li><a href="">3 звезды</a>
+                                        </li>
+                                        <li><a href="">4 звезды</a>
+                                        </li>
+                                        <li><a href="">5 звезд</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-block spa">
+                                    <h2 class="cat-title"><a data-cat="spa" href="">Spa</a></h2>
+                                    <ul>
+                                        <li><a href="">Spa-салоны</a>
+                                        </li>
+                                        <li><a href="">Массаж</a>
+                                        </li>
+                                        <li><a href="">Акупунктура</a>
+                                        </li>
+                                        <li><a href="">Аюрведа</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-block medicin">
+                                    <h2 class="cat-title"><a data-cat="medicin" href="">Медицина</a></h2>
+                                    <ul>
+                                        <li><a href="">Клиники</a>
+                                        </li>
+                                        <li><a href="">Частные врачи</a>
+                                        </li>
+                                        <li><a href="">Стоматология</a>
+                                        </li>
+                                        <li><a href="">Аптеки</a>
+                                        </li>
+                                        <li><a href="">Вет.лечебницы</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-block nightlife">
+                                    <h2 class="cat-title"><a data-cat="nightlife" href="">Ночная жизнь</a></h2>
+                                    <ul>
+                                        <li><a href="">Кабаре</a>
+                                        </li>
+                                        <li><a href="">Шоу бары</a>
+                                        </li>
+                                        <li><a href="">Дискотеки</a>
+                                        </li>
+                                        <li><a href="">Экзотерические</a>
+                                        </li>
+                                        <li><a href="">Танцы</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-block sport">
+                                    <h2 class="cat-title"><a data-cat="sport" href="">Спорт</a></h2>
+                                    <ul>
+                                        <li><a href="">Спорт магазины</a>
+                                        </li>
+                                        <li><a href="">Все для бега</a>
+                                        </li>
+                                        <li><a href="">Спортклубы</a>
+                                        </li>
+                                        <li><a href="">Стадионы</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-block condo">
+                                    <h2 class="cat-title"><a data-cat="condo" href="">Кондоминиумы</a></h2>
+                                    <ul>
+                                        <li><a href="">Частные</a>
+                                        </li>
+                                        <li><a href="">Сетевые</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-block guesthous">
+                                    <h2 class="cat-title"><a data-cat="guesthous" href="">Гестхаузы</a></h2>
+                                    <ul>
+                                        <li><a href="">Частные</a>
+                                        </li>
+                                        <li><a href="">Сетевые</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-block fun">
+                                    <h2 class="cat-title"><a data-cat="fun" href="">Развлечения</a></h2>
+                                    <ul>
+                                        <li><a href="">Аква-парки</a>
+                                        </li>
+                                        <li><a href="">Зоопарки</a>
+                                        </li>
+                                        <li><a href="">Питомники</a>
+                                        </li>
+                                        <li><a href="">Отдых на воде</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-line">
+                <a href=""><i class="fa fa-caret-up" aria-hidden="true"></i></a>
+                <div>
+                    <div class="list-line">
+                        <div class="container">
+                            <div class="row">
+                                <ul>
+                                    <li>
+                                        <p data-cat="medicin">Медицина</p>
+                                    </li>
+                                    <li>
+                                        <p data-cat="tourism">Туризм</p>
+                                    </li>
+                                    <li>
+                                        <p data-cat="condo">Кондоминиумы</p>
+                                    </li>
+                                    <li>
+                                        <p data-cat="spa">Spa</p>
+                                    </li>
+                                    <li>
+                                        <p data-cat="beaches">Пляжи</p>
+                                    </li>
+                                    <li>
+                                        <p data-cat="restorants">Рестораны</p>
+                                    </li>
+                                    <li>
+                                        <p data-cat="guesthous">Гестхаузы</p>
+                                    </li>
+                                    <li>
+                                        <p data-cat="transport">Транспорт</p>
+                                    </li>
+                                    <li>
+                                        <p data-cat="shoping">Шоппинг</p>
+                                    </li>
+                                    <li>
+                                        <p data-cat="hotels">Отели</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icons-line">
+                        <div class="container">
+                            <div class="row">
+                                <ul>
+                                    <li>
+                                        <div class="icon-wrap medicin">
+                                            <input data-cat="medicin" type="checkbox" name="medicin">
+                                            <p class="label"></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon-wrap tourism">
+                                            <input data-cat="tourism" type="checkbox" name="tourism">
+                                            <p class="label"></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon-wrap condo">
+                                            <input data-cat="condo" type="checkbox" name="condo">
+                                            <p class="label"></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon-wrap spa">
+                                            <input data-cat="spa" type="checkbox" name="spa">
+                                            <p class="label"></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon-wrap beaches">
+                                            <input data-cat="beaches" type="checkbox" name="beaches">
+                                            <p class="label"></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon-wrap restorants">
+                                            <input data-cat="restorants" type="checkbox" name="restorants">
+                                            <p class="label"></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon-wrap guesthous">
+                                            <input data-cat="guesthous" type="checkbox" name="guesthous">
+                                            <p class="label"></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon-wrap transport">
+                                            <input data-cat="transport" type="checkbox" name="transport">
+                                            <p class="label"></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon-wrap shoping">
+                                            <input data-cat="shoping" type="checkbox" name="shoping">
+                                            <p class="label"></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon-wrap hotels">
+                                            <input data-cat="hotels" type="checkbox" name="hotels">
+                                            <p class="label"></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="left-side-wrap">
+                <div class="side-open-btn">
+                    <div class="avatar-wrap">
+                        <img src="/static/img/assets/map/big-avatar.png" alt="">
+                        <img src="/static/img/assets/map/left-side-arr.png" alt="">
+                    </div>
+                </div>
+                <div class="side-head">
+                    <div class="loged-wrap">
+                        <div class="avatar-wrap">
+                            <img src="/static/img/assets/map/big-avatar.png" alt="">
+                        </div>
+                        <div class="name-wrap">
+                            <p><a href="">Каролина Андрощенко</a>
+                            </p>
+                        </div>
+                    </div>
+                    <a href=""><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+                </div>
+                <div class="side-menu-wrap">
+                    <ul>
+                        <li><a href="">Мои места</a>
+                        </li>
+                        <li><a href="">Мои маршруты</a>
+                        </li>
+                        <li><a href="">Мои экскурсии</a>
+                        </li>
+                        <li><a href="">Избранное</a>
+                        </li>
+                        <li><a href="">Сообщения</a>
+                        </li>
+                        <li><a href="">Помощь в дороге</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-side-wrap routes">
+                <div class="swipe-div"></div>
+                <div class="result-open-btn">
+                    <a href="#"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+                    <p class="res-cont">(28)</p>
+                </div>
+                <div class="result-head-line">
+                    <p>Все маршруты (<span class="result-cout">28</span>)</p>
+                    <a href="" class="new-route">Новый маршрут</a>
+                </div>
+                <div class="side-bar-routes">
+                    <div class="sort-block divider">
+                        <div class="sort-point controller-wrap-inner">
+                            <label class="sort-point__label">Стартовая точка:</label>
+                            <div class="select-wrap">
+                                <select>
+                                    <option value="">A-т Патайи (Terminal 3. Max Mara)</option>
+                                    <option value="">A-т Патайи (Terminal 3. Max Mara)</option>
+                                    <option value="">A-т Патайи (Terminal 3. Max Mara)</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="control-wrap">
+                            <div class="sort-popularity controller-wrap-inner">
+                                <label class="sort-popularity__label">Сортировать по:</label>
+                                <div class="select-wrap">
+                                    <select>
+                                        <option value="">Популярности</option>
+                                        <option value="">Популярность 1</option>
+                                        <option value="">Популярность 2</option>
+                                        <option value="">Популярность 3</option>
+                                        <option value="">Популярность 4</option>
+                                        <option value="">Популярность 5</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                            <div class="sort-date controller-wrap-inner">
+                                <label class="sort-date__label for=" sort-date ">Дата:</label>
+                        <input class="sort-date__input " id="sort-date " minlength="2 " required type="text " name="date " value="06 / 12 / 2017 ">
+                    </div>
+                </div>
+                <div class="sort-transport ">
+                    <ul class="transport-list ">
+                        <li class="transport-title ">Вид транспорта:</li>
+                        <li class="car "><a class="icon-car " href="# "></a></li>
+                        <li class="bus active "><a class="icon-bus " href="# "></a></li>
+                        <li class="motorcycle "><a class="icon-motorcycle " href="# "></a></li>
+                        <li class="auto-rickshaw "><a class="icon-auto-rickshaw " href="# "></a></li>
+                        <li class="hiking "><a class="icon-hiking " href="# "></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="routes-block ">
+                <ul class="routes-list ">
+                    <li class="route-item divider ">
+                        <p class="route-title "><a class="route-title__link " href="# "><i class="fa fa-quote-left "></i>Пляжи на 1 день<i class="fa fa-quote-right "></i><i
+                            class="icon-hiking "></i></a></p>
+                        <div class="route-wrap route-wrap-head ">
+                            <p class="route-cost "><span class="route-cost-title ">Стоимость с человека:</span>бесплатно</p>
+                            <p class="route-places "><span class="route-places-title ">Осталось мест:</span>10</p>
+                        </div>
+                        <p class="route-start "><i class="fa fa-paper-plane "></i><span class="route-start__title ">Старт:</span>2 Muen-ngern Road Beach Kathu Tambon Patong</p>
+                        <p class="route-finish "><i class="fa fa-map-marker "></i><span class="route-finish__title ">Финиш:</span>Пляж Равай, (Пхукет, Таиланд)</p>
+                        <ul class="route-wrap route-info ">
+                            <li class="route-info__item "><a class="route-map-show " href="# "><i class="icon-loupe "></i>Показать на карте</a></li>
+                            <li class="route-info__item "><a class="route-photo " href="# "><i class="icon-photo "></i>Фото</a></li>
+                            <li class="route-info__item "><a class="route-find " href="# "><i class="icon-map-marker "></i>Как найти?</a></li>
+                        </ul>
+                        <div class="route-wrap route-wrap-footer ">
+                            <p class="route-length "><span class="route-length__title ">Протяженность:</span>10км</p>
+                            <p class="route-complexity "><span class="route-complexity__title ">Сложность:</span>легкая</p>
+                            <p class="route-durability "><span class="route-durability__title ">Длительность:</span>1 день</p>
+                        </div>
+                        <div class="route-wrap route-wrap-btn-wrap ">
+                            <a href="# " class="btn btn-green "><i class="fa fa-star "></i>В избранное</a>
+                            <a href="# " class="btn btn-blue "><i class="fa fa-plus "></i>Я тоже хочу</a>
+                            <a href="# " class="btn btn-bluish "><i class="fa fa-comment "></i>Обсуждение</a>
+                        </div>
+                    </li>
+                    <li class="route-item divider ">
+                        <p class="route-title "><a class="route-title__link " href="# "><i class="fa fa-quote-left "></i>Туры в саванну<i class="fa fa-quote-right "></i><i
+                            class="icon-bus "></i></a></p>
+                        <div class="route-wrap route-wrap-head ">
+                            <p class="route-cost "><span class="route-cost-title ">Стоимость с человека:</span>240$</p>
+                            <p class="route-places "><span class="route-places-title ">Осталось мест:</span>4</p>
+                        </div>
+                        <p class="route-start "><i class="fa fa-paper-plane "></i><span class="route-start__title ">Старт:</span>2 Muen-ngern Road Beach Kathu Tambon Patong</p>
+                        <p class="route-finish "><i class="fa fa-map-marker "></i><span class="route-finish__title ">Финиш:</span>Равнина Тумей, (Пхукет, Таиланд)</p>
+                        <ul class="route-wrap route-info ">
+                            <li class="route-info__item "><a class="route-map-show " href="# "><i class="icon-loupe "></i>Показать на карте</a></li>
+                            <li class="route-info__item "><a class="route-photo " href="# "><i class="icon-photo "></i>Фото</a></li>
+                            <li class="route-info__item "><a class="route-find " href="# "><i class="icon-map-marker "></i>Как найти?</a></li>
+                        </ul>
+                        <div class="route-wrap route-wrap-footer ">
+                            <p class="route-length "><span class="route-length__title ">Протяженность:</span>120км</p>
+                            <p class="route-complexity "><span class="route-complexity__title ">Сложность:</span>средне</p>
+                            <p class="route-durability "><span class="route-durability__title ">Длительность:</span>12 дней</p>
+                        </div>
+                        <div class="route-wrap route-wrap-btn-wrap ">
+                            <a href="# " class="btn btn-green "><i class="fa fa-star "></i>В избранное</a>
+                            <a href="# " class="btn btn-blue "><i class="fa fa-plus "></i>Я тоже хочу</a>
+                            <a href="# " class="btn btn-bluish "><i class="fa fa-comment "></i>Обсуждение</a>
+                        </div>
+                    </li>
+                    <li class="route-item divider ">
+                        <p class="route-title "><a class="route-title__link " href="# "><i class="fa fa-quote-left "></i>Туры в саванну<i class="fa fa-quote-right "></i><i
+                            class="icon-motorcycle "></i></a></p>
+                        <div class="route-wrap route-wrap-head ">
+                            <p class="route-cost "><span class="route-cost-title ">Стоимость с человека:</span>240$</p>
+                            <p class="route-places "><span class="route-places-title ">Осталось мест:</span>4</p>
+                        </div>
+                        <p class="route-start "><i class="fa fa-paper-plane "></i><span class="route-start__title ">Старт:</span>2 Muen-ngern Road Beach Kathu Tambon Patong</p>
+                        <p class="route-finish "><i class="fa fa-map-marker "></i><span class="route-finish__title ">Финиш:</span>Равнина Тумей, (Пхукет, Таиланд)</p>
+                        <ul class="route-wrap route-info ">
+                            <li class="route-info__item "><a class="route-map-show " href="# "><i class="icon-loupe "></i>Показать на карте</a></li>
+                            <li class="route-info__item "><a class="route-photo " href="# "><i class="icon-photo "></i>Фото</a></li>
+                            <li class="route-info__item "><a class="route-find " href="# "><i class="icon-map-marker "></i>Как найти?</a></li>
+                        </ul>
+                        <div class="route-wrap route-wrap-footer ">
+                            <p class="route-length "><span class="route-length__title ">Протяженность:</span>120км</p>
+                            <p class="route-complexity "><span class="route-complexity__title ">Сложность:</span>средне</p>
+                            <p class="route-durability "><span class="route-durability__title ">Длительность:</span>12 дней</p>
+                        </div>
+                        <div class="route-wrap route-wrap-btn-wrap ">
+                            <a href="# " class="btn btn-green "><i class="fa fa-star "></i>В избранное</a>
+                            <a href="# " class="btn btn-blue "><i class="fa fa-plus "></i>Я тоже хочу</a>
+                            <a href="# " class="btn btn-bluish "><i class="fa fa-comment "></i>Обсуждение</a>
+                        </div>
+                    </li>
+                    <li class="route-item divider ">
+                        <p class="route-title "><a class="route-title__link " href="# "><i class="fa fa-quote-left "></i>Туры в саванну<i class="fa fa-quote-right "></i><i
+                            class="icon-car "></i></a></p>
+                        <div class="route-wrap route-wrap-head ">
+                            <p class="route-cost "><span class="route-cost-title ">Стоимость с человека:</span>240$</p>
+                            <p class="route-places "><span class="route-places-title ">Осталось мест:</span>4</p>
+                        </div>
+                        <p class="route-start "><i class="fa fa-paper-plane "></i><span class="route-start__title ">Старт:</span>2 Muen-ngern Road Beach Kathu Tambon Patong</p>
+                        <p class="route-finish "><i class="fa fa-map-marker "></i><span class="route-finish__title ">Финиш:</span>Равнина Тумей, (Пхукет, Таиланд)</p>
+                        <ul class="route-wrap route-info ">
+                            <li class="route-info__item "><a class="route-map-show " href="# "><i class="icon-loupe "></i>Показать на карте</a></li>
+                            <li class="route-info__item "><a class="route-photo " href="# "><i class="icon-photo "></i>Фото</a></li>
+                            <li class="route-info__item "><a class="route-find " href="# "><i class="icon-map-marker "></i>Как найти?</a></li>
+                        </ul>
+                        <div class="route-wrap route-wrap-footer ">
+                            <p class="route-length "><span class="route-length__title ">Протяженность:</span>120км</p>
+                            <p class="route-complexity "><span class="route-complexity__title ">Сложность:</span>средне</p>
+                            <p class="route-durability "><span class="route-durability__title ">Длительность:</span>12 дней</p>
+                        </div>
+                        <div class="route-wrap route-wrap-btn-wrap ">
+                            <a href="# " class="btn btn-green "><i class="fa fa-star "></i>В избранное</a>
+                            <a href="# " class="btn btn-blue "><i class="fa fa-plus "></i>Я тоже хочу</a>
+                            <a href="# " class="btn btn-bluish "><i class="fa fa-comment "></i>Обсуждение</a>
+                        </div>
+                    </li>
+                    <li class="route-item divider ">
+                        <p class="route-title "><a class="route-title__link " href="# "><i class="fa fa-quote-left "></i>Туры в саванну<i class="fa fa-quote-right "></i><i
+                            class="icon-auto-rickshaw "></i></a></p>
+                        <div class="route-wrap route-wrap-head ">
+                            <p class="route-cost "><span class="route-cost-title ">Стоимость с человека:</span>240$</p>
+                            <p class="route-places "><span class="route-places-title ">Осталось мест:</span>4</p>
+                        </div>
+                        <p class="route-start "><i class="fa fa-paper-plane "></i><span class="route-start__title ">Старт:</span>2 Muen-ngern Road Beach Kathu Tambon Patong</p>
+                        <p class="route-finish "><i class="fa fa-map-marker "></i><span class="route-finish__title ">Финиш:</span>Равнина Тумей, (Пхукет, Таиланд)</p>
+                        <ul class="route-wrap route-info ">
+                            <li class="route-info__item "><a class="route-map-show " href="# "><i class="icon-loupe "></i>Показать на карте</a></li>
+                            <li class="route-info__item "><a class="route-photo " href="# "><i class="icon-photo "></i>Фото</a></li>
+                            <li class="route-info__item "><a class="route-find " href="# "><i class="icon-map-marker "></i>Как найти?</a></li>
+                        </ul>
+                        <div class="route-wrap route-wrap-footer ">
+                            <p class="route-length "><span class="route-length__title ">Протяженность:</span>120км</p>
+                            <p class="route-complexity "><span class="route-complexity__title ">Сложность:</span>средне</p>
+                            <p class="route-durability "><span class="route-durability__title ">Длительность:</span>12 дней</p>
+                        </div>
+                        <div class="route-wrap route-wrap-btn-wrap ">
+                            <a href="# " class="btn btn-green "><i class="fa fa-star "></i>В избранное</a>
+                            <a href="# " class="btn btn-blue "><i class="fa fa-plus "></i>Я тоже хочу</a>
+                            <a href="# " class="btn btn-bluish "><i class="fa fa-comment "></i>Обсуждение</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="right-side-bar-two route-single ">
+        <div class="result-open-btn ">
+            <a href=" "><i class="fa fa-caret-left " aria-hidden="true "></i></a>
+        </div>
+        <div class="result-head-line ">
+            <p class="result-head-line__title ">Пляжи на 1 день<i class="icon-hiking_white "></i></p>
+            <ul class="route-single-btn-wrap ">
+                <!--<li class="route-single-btn__item "><i class="icon-pencil "></i></li>-->
+                <li class="route-single-btn__item "><i class="icon-arrow-back "></i></li>
+            </ul>
+        </div>
+        <div class="route-single-wrap ">
+            <div class="route-item divider ">
+                <div class="route-wrap route-info-start ">
+                    <p class="route-info-start__date "><span class="route-info-start__date-title ">Дата начала:</span><span class="route-info-start__date-val ">04/02/2018</span></p>
+                    <p class="route-info-start__time "><span class="route-info-start__time-title ">Время:</span><span class="route-info-start__time-val ">10:30</span></p>
+                </div>
+                <p class="transport-type ">Вид транспорта: <i class="icon-hiking "></i></p>
+                <div class="route-wrap route-wrap-head ">
+                    <p class="route-cost "><span class="route-cost-title ">Стоимость с человека:</span>бесплатно</p>
+                    <p class="route-places "><span class="route-places-title ">Осталось мест:</span>10</p>
+                </div>
+                <p class="route-start "><i class="fa fa-paper-plane "></i><span class="route-start__title ">Старт:</span>2 Muen-ngern Road Beach Kathu Tambon Patong</p>
+                <p class="route-finish "><i class="fa fa-map-marker "></i><span class="route-finish__title ">Финиш:</span>Пляж Равай, (Пхукет, Таиланд)</p>
+                <ul class="route-wrap route-info ">
+                    <li class="route-info__item "><a class="route-map-show " href="# "><i class="icon-loupe "></i>Показать на карте</a></li>
+                    <li class="route-info__item "><a class="route-photo " href="# "><i class="icon-photo "></i>Фото</a></li>
+                    <li class="route-info__item "><a class="route-find " href="# "><i class="icon-map-marker "></i>Как найти?</a></li>
+                </ul>
+                <div class="route-wrap route-wrap-footer ">
+                    <p class="route-length "><span class="route-length__title ">Протяженность:</span>10 км</p>
+                    <p class="route-complexity "><span class="route-complexity__title ">Сложность:</span>Легкая</p>
+                    <p class="route-durability "><span class="route-durability__title ">Длительность:</span>1 день</p>
+                </div>
+            </div>
+            <div class="route-desc divider ">
+                <p class="route-desc__title ">Описание:</p>
+                <p>Ищу попутчиков для Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Связаться со мной вы можете личным сообщением в чате обсуждений.</p>
+            </div>
+            <div class="route-companions divider ">
+                <p class="route-companions__title ">Выбранные попутчики:</p>
+                <ul class="companions-wrap ">
+                    <li class="companion ">
+                        <img class="companion__img " src="static/img/assets/routesComp/companions-1.png " alt="Michael Fassbender ">
+                        <p class="companion__name ">Michael Fassbender</p>
+                        <p class="companion__place-count ">2 места</p>
+                    </li>
+                    <li class="companion ">
+                        <img class="companion__img " src="static/img/assets/routesComp/companions-2.png " alt="Анна Смирнова ">
+                        <p class="companion__name ">Анна Смирнова</p>
+                        <p class="companion__place-count ">3 места</p>
+                    </li>
+                    <li class="companion ">
+                        <img class="companion__img " src="static/img/assets/routesComp/companions-3.png " alt="Евгения Стоженко ">
+                        <p class="companion__name ">Евгения Стоженко</p>
+                        
+                    </li>
+                    <li class="companion ">
+                        <img class="companion__img " src="static/img/assets/routesComp/companions-4.png " alt="Меттью Макконахи ">
+                        <p class="companion__name ">Меттью Макконахи</p>
+                        
+                    </li>
+                    <li class="companion ">
+                        <img class="companion__img " src="static/img/assets/routesComp/companions-5.png " alt="Сергей Исаков ">
+                        <p class="companion__name ">Сергей Исаков</p>
+                        <p class="companion__place-count ">2 места</p>
+                    </li>
+                    <li class="companion ">
+                        <img class="companion__img " src="static/img/assets/routesComp/companions-6.png " alt="Andrey Suvorov ">
+                        <p class="companion__name ">Andrey Suvorov</p>
+                        <p class="companion__place-count ">2 места</p>
+                    </li>
+                    <li class="companion ">
+                        <img class="companion__img " src="static/img/assets/routesComp/companions-7.png " alt="Екатерина Краско ">
+                        <p class="companion__name ">Екатерина Краско</p>
+                        
+                    </li>
+                    <li class="companion ">
+                        <img class="companion__img " src="static/img/assets/routesComp/companions-8.png " alt="Каролина Андрошенко ">
+                        <p class="companion__name ">Каролина Андрошенко</p>
+                        
+                    </li>
+                </ul>
+            </div>
+            <div class="route-chat-block ">
+                <p class="route-chat-block__title ">Обсуждение:</p>
+                <div class="chat ">
+                    <p class="chat-title "><span class="chat-title__overall ">Общий чат</span><span class="chat-title__personal ">Michael F.</span></p>
+                    <div class="chat-wrap ">
+                        <div class="message-wrap ">
+                            <div class="message author ">
+                                <img class="message__img " src="static/img/assets/routesComp/companions-1.png " alt="Michael Fassbender ">
+                                <p class="message__name ">Michael Fassbender</p>
+                                <p class="message__text ">Всем привет!</p>
+                            </div>
+                            <div class="message member ">
+                                <p class="message__text ">Можно ли к Вам записаться?</p>
+                                <p class="message__name ">Меттью Макконахи</p>
+                                <img class="message__img " src="static/img/assets/routesComp/companions-2.png " alt="Меттью Макконахи ">
+                            </div>
+                            <div class="message member ">
+                                <p class="message__text ">Добавьте меня в список.</p>
+                                <p class="message__name ">Меттью Макконахи</p>
+                                <img class="message__img " src="static/img/assets/routesComp/companions-3.png " alt="Меттью Макконахи ">
+                            </div>
+                            <div class="message member ">
+                                <p class="message__text ">Привет, привет! Иду с вами)</p>
+                                <p class="message__name ">Анна Смирнова</p>
+                                <img class="message__img " src="static/img/assets/routesComp/companions-4.png " alt="Анна Смирнова ">
+                            </div>
+                            <div class="message member ">
+                                <p class="message__text ">Нас будет двое, записывайте))</p>
+                                <p class="message__name ">Сергей Исаков</p>
+                                <img class="message__img " src="static/img/assets/routesComp/companions-5.png " alt="Сергей Исаков ">
+                            </div>
+                            <div class="message member ">
+                                <p class="message__text ">Тогда записывайте)</p>
+                                <p class="message__name ">Иван Васильевич</p>
+                                <img class="message__img " src="static/img/assets/routesComp/companions-6.png " alt="Иван Васильевич ">
+                            </div>
+                            <div class="message member ">
+                                <p class="message__text ">Тогда записывайте)</p>
+                                <p class="message__name ">Иван Васильевич</p>
+                                <img class="message__img " src="static/img/assets/routesComp/companions-6.png " alt="Иван Васильевич ">
+                            </div>
+                            <div class="message member ">
+                                <p class="message__text ">Тогда записывайте)</p>
+                                <p class="message__name ">Иван Васильевич</p>
+                                <img class="message__img " src="static/img/assets/routesComp/companions-6.png " alt="Иван Васильевич ">
+                            </div>
+                            <div class="message member ">
+                                <p class="message__text ">Тогда записывайте)</p>
+                                <p class="message__name ">Иван Васильевич</p>
+                                <img class="message__img " src="static/img/assets/routesComp/companions-6.png " alt="Иван Васильевич ">
+                            </div>
+                            <div class="message member ">
+                                <p class="message__text ">Тогда записывайте)</p>
+                                <p class="message__name ">Иван Васильевич</p>
+                                <img class="message__img " src="static/img/assets/routesComp/companions-6.png " alt="Иван Васильевич ">
+                            </div>
+                        </div>
+                    </div>
+                    <form action="# " class="chat-message-form ">
+                        <div class="control-group ">
+                            <input class="chat_input " minlength="2 " required type="text " name="chat-message " placeholder="Введите текст сообщения ">
+                            <i class="icon-chat "></i>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="right-side-bar-three route-new ">
+        <div class="route-new-btn ">
+            <a class="route-new-btn__back " href="# "><i class="fa fa-caret-right " aria-hidden="true "></i></a>
+        </div>
+        <div class="result-head-line ">
+            <p class="result-head-line__title ">Введите название маршрута</p>
+            <a class="btn-save " href="# ">Сохранить</a>
+        </div>
+        <div class="route-single-wrap ">
+            <div class="route-new ">
+                <div class="route-new__info-top divider ">
+                    <div class="control-group-line top ">
+                        <div class="control-group date-group ">
+                            <label class="new-route-label " for="new-route-date ">Дата начала:</label>
+                            <input class="route-new-date__input " id="new-route-date " required type="text " name="date " value="22 / 12 / 18 ">
+                            <i class="icon-close-red "></i>
+                        </div>
+                        <div class="control-group time-group ">
+                            <label class="new-route-label " for="new-route-time ">Время сбора:</label>
+                            <input class="route-new-time__input " id="new-route-time " required type="text " name="date " value="10 : 30 ">
+                            <i class="icon-close-red "></i>
+                        </div>
+                    </div>
+                    <div class="control-group-line type-transport ">
+                        <ul class="transport-list ">
+                            <li class="transport-title ">Вид транспорта:</li>
+                            <li class="car "><a class="icon-car " href="# "></a></li>
+                            <li class="bus active "><a class="icon-bus " href="# "></a></li>
+                            <li class="motorcycle "><a class="icon-motorcycle " href="# "></a></li>
+                            <li class="auto-rickshaw "><a class="icon-auto-rickshaw " href="# "></a></li>
+                            <li class="hiking "><a class="icon-hiking " href="# "></a></li>
+                        </ul>
+                    </div>
+                    <div class="control-group-line bottom ">
+                        <div class="control-group carrier ">
+                            <label class="sort-popularity__label ">Перевозчик:</label><div class="select-wrap ">
+                <select>
+                    <option value=" ">Выбрать</option>
+                    <option value=" ">Вабор-1</option>
+                    <option value=" ">Вабор-2</option>
+                    <option value=" ">Вабор-3</option>
+                    <option value=" ">Вабор-4</option>
+                </select>
+            </div>
+            
+                        </div>
+                        <div class="control-group checkbox-place ">
+                            <label>
+                                <span class="carrier-choose-place__label label ">Выберем на месте</span>
+                                <input class="checkbox " id="carrier-choose-place " type="checkbox " name="carrier-choose-place ">
+                                <span class="checkbox-custom "></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="route-new__info-center divider ">
+                    <div class="control-group set-start ">
+                        <label class="set-start__label ">Задать точку начала пути:</label><div class="select-wrap ">
+                <select>
+                    <option value=" ">A-т Патайи (Terminal 3. Max Mara)</option>
+                    <option value=" ">A-т Патайи (Terminal 3. Max Mara)</option>
+                    <option value=" ">A-т Патайи (Terminal 3. Max Mara)</option>
+                </select>
+            </div>
+            
+                    </div>
+                    <div class="control-group set-finish ">
+                        <label class="set-finish__label ">Задать точку прибытия:</label><div class="select-wrap ">
+                <select>
+                    <option value=" ">A-т Патайи (Terminal 3. Max Mara)</option>
+                    <option value=" ">A-т Патайи (Terminal 3. Max Mara)</option>
+                    <option value=" ">A-т Патайи (Terminal 3. Max Mara)</option>
+                </select>
+            </div>
+            
+                    </div>
+                    <div class="control-group set-photo ">
+                        <p class="set-photo__label ">Загрузить фото:</p>
+                        <div class="file-upload ">
+                            <label>
+                                <input class="route-new-photo " id="new-route-photo " type="file " name="new-route-photo ">
+                                <span class="file-upload__label "><i class="icon-photo "></i>Загрузить файл.</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="control-group set-desc ">
+                        <label class="set-desc__label " for="new-route-desc ">Описание маршрута:</label>
+                        <input class="route-new-desc__input " id="new-route-desc " minlength="2 " required type="text " name="date " placeholder="Введите текст... ">
+                    </div>
+                </div>
+                <div class="route-new__info-bottom ">
+                    <div class="control-group-line set-people ">
+                        <div class="control-group ">
+                            <label class="new-route-label " for="set-people ">Максимум попутчиков:</label>
+                            <input class="route-new__set-people " id="set-people " required type="text " name="set-people " value="10 ">
+                        </div>
+                        <div class="control-group checkbox-people ">
+                            <label>
+                                <input class="checkbox set-people__no-limit " id="set-people__no-limit " type="checkbox " name="set-people__no-limit ">
+                                <span class="checkbox-custom "></span>
+                                <span class="set-people__no-limit-label label ">Неограничено</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="control-group-line set-price ">
+                        <div class="control-group ">
+                            <label class="set-price-label " for="set-people ">Цена с человека:</label>
+                            <input class="route-new__set-price " id="set-price " required type="text " name="set-prise " value="100 ">
+                        </div>
+                        <div class="control-group checkbox-price ">
+                            <label>
+                                <input class="checkbox set-price__no-limit " id="set-price__no-limit " type="checkbox " name="set-price__no-limit ">
+                                <span class="checkbox-custom "></span>
+                                <span class="set-price__no-limit-label label ">Неограничено</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="control-group new-route-complexity ">
+                        <label class="sort-popularity__label ">Сложность маршрута:</label><div class="select-wrap ">
+                <select>
+                    <option value=" ">Выбрать</option>
+                    <option value=" ">Легко</option>
+                    <option value=" ">Средне</option>
+                    <option value=" ">Сложно</option>
+                </select>
+            </div>
+            
+                    </div>
+                    <div class="control-group-line set-picking-time ">
+                        <p class="new-route-label set-picking-time__label ">Время сбора:</p>
+                        <div class="control-group time-hour ">
+                            <input class="route-new-time-hour " id="new-route-hour " required type="text " name="new-route-hour " value="15 ">
+                            <span class="time-hour__label ">ЧЧ</span>
+                        </div>
+                        <div class="control-group time-minute ">
+                            <input class="route-new-time-minute " id="new-route-minute " required type="text " name="new-route-minute " value="00 ">
+                            <span class="time-minute__label ">мин</span>
+                        </div>
+                        <div class="control-group checkbox-time ">
+                            <label>
+                                <input class="checkbox set-picking-time__no-limit " id="set-picking-time__no-limit " type="checkbox " name="set-picking-time__no-limit ">
+                                <span class="checkbox-custom "></span>
+                                <span class="set-picking-time__no-limit label ">Не указывать</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="control-group route-new-contact-info ">
+                        <label class="new-route-label " for="new-route-contact-info ">Контактная информация:</label>
+                        <input class="new-route-contact-info " id="new-route-contact-info " minlength="2 " required type="text " name="new-route-contact-info " placeholder="Введите текст... ">
+                    </div>
+                    <div class="control-group route-new-description ">
+                        <label class="new-route-label " for="new-route-description ">Описание:</label>
+                        <input class="new-route-description " id="new-route-description " minlength="2 " required type="text " name="new-route-description " placeholder="Введите текст... ">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<div class="modal ">
+    <div class="login-modal ">
+        <div class="modal-wrap ">
+            <h3>Вход в аккаунт</h3>
+            <form class="form-login " action="# ">
+                <input type="email " name="email " placeholder="Ваш E-mail " required=" ">
+                <input type="password " name="pass " placeholder="Ваш пароль " required=" ">
+                <div class="form-login__register register ">
+                    <a class="register__btn " href="# " title="Регистрация ">Регистрация</a>
+                    <p class="register__social ">Вход через :<a class="facebook-link " href="# "></a><a class="google-link " href="# "></a></p>
+                </div>
+                <input type="submit " value="Войти ">
+                <a class="form-login__btn-forgot-pass " href="# ">Забыли пароль?</a>
+            </form>
+        </div>
+    </div>
+    <div class="registration-modal ">
+        <div class="modal-wrap ">
+            <h3>Регистрация</h3>
+            <form class="form-registration ">
+                <div class="control-group ">
+                    <input class="form-registration__mail "
+                           type="email "
+                           name="email "
+                           placeholder="Ваш E-mail "
+                           required
+                           data-validation-required-message="E-mail - обязательное поле "
+                           data-validation-email-message="Неправильный формат E-mail "
+                    />
+                    <p class="help-block "></p>
+                </div>
+                <div class="control-group ">
+                    <div class="controls ">
+                        <input
+                            type="password "
+                            name="pass "
+                            placeholder="Ваш пароль "
+                            data-validation-required-message="Пароль - обязательное поле "
+                            required
+                        />
+                        <p class="help-block "></p>
+                    </div>
+                </div>
+                <div class="control-group ">
+                    <div class="controls ">
+                        <input
+                            type="password "
+                            name="repass "
+                            placeholder="Повторите пароль "
+                            data-validation-match-match="pass "
+                            data-validation-match-message="Пароли должны совпадать "
+                            data-validation-required-message="Пароль - обязательное поле "
+                            required
+                        />
+                        <p class="help-block "></p>
+                    </div>
+                </div>
+                <p class="form-registration__footer register__social ">Регистрация через :<a class="facebook-link " href="# "></a><a class="google-link " href="# "></a></p>
+                <input class="form-registration__btn " type="submit " value="Подтвердить ">
+            </form>
+            
+        </div>
+    </div>
+    
+    <div class="routes-modal-photo ">
+        <div class="route-slider ">
+            <div class="route-slider__item "><img class="route-slider__img " src="static/img/assets/routesComp/routes-photo-1.jpg " alt="Маршрут фото "></div>
+            <div class="route-slider__item "><img class="route-slider__img " src="static/img/assets/routesComp/routes-photo-1.jpg " alt="Маршрут фото "></div>
+            <div class="route-slider__item "><img class="route-slider__img " src="static/img/assets/routesComp/routes-photo-1.jpg " alt="Маршрут фото "></div>
+            <div class="route-slider__item "><img class="route-slider__img " src="static/img/assets/routesComp/routes-photo-1.jpg " alt="Маршрут фото "></div>
+            <div class="route-slider__item "><img class="route-slider__img " src="static/img/assets/routesComp/routes-photo-1.jpg " alt="Маршрут фото "></div>
+        </div>
+        <i class="icon-close "></i>
+    </div>
+</div>
+<!--[if lt IE 9]>
+<script src="libs/html5shiv/es5-shim.min.js "></script>
+<script src="libs/html5shiv/html5shiv.min.js "></script>
+<script src="libs/html5shiv/html5shiv-printshiv.min.js "></script>
+<script src="libs/respond/respond.min.js "></script>
+<![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js "></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoZ6hTP6pfjWIiT_CvclzR_jLmD4ZN700 "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js "></script>
+<script src="static/js/separate-js/jqBootstrapValidation.js "></script>
+<script src="static/js/separate-js/fullpage.fadingEffect.limited.min.js "></script>
+<script src="static/js/separate-js/jquery.fullPage.js "></script>
+<script src="static/js/separate-js/jquery.touchSwipe.min.js "></script>
+<script src="static/js/separate-js/slick.min.js "></script>
+<script src="static/js/separate-js/jquery.arcticmodal.js "></script>
+<script src="static/js/separate-js/jquery.accordion.js "></script>
+<script src="static/js/separate-js/jquery.mCustomScrollbar.concat.min.js "></script>
+<script src="static/js/separate-js/common.js "></script>
+<script src="static/js/separate-js/map-functions.js "></script>
+<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
+
